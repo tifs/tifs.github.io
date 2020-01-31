@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text|IBM+Plex+Sans&display=swap');
+
+body {
+  background: #337755;
+  font-family: 'IBM Plex Sans', san-serif;
+  text-align: center;
+  font-size: 18px;
+  margin: 2em;
+}
+
+h1 {
+  font-family: 'DM Serif Text', serif;
+  font-size: 70px;
+  color: rgba(256,256,256,.7);
+}
+li {
+  text-align: left;
+  font-style: bold;
+}
+hr {
+  width: 300px;
+}
+a{
+  color: pink;
+  text-decoration: none;
+}
+#slogan {
+  font-size: 24px;
+  font-style: italic;
+}
