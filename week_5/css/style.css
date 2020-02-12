@@ -27,3 +27,15 @@ footer {
     border: 1px black solid;
     padding: 20px;
 }
+
+.wrapper {
+    background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    border: 1px black solid;
+    padding: 20px;
+}
