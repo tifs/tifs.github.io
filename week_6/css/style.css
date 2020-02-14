@@ -1,0 +1,89 @@
+header {
+    background-color: #fb4fb7;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav {
+    background-color: #71daf9;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section {
+    background-color: #cd7af2;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+article {
+    background-color: #71daf9;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+footer {
+    background-color: #dce9f2;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+#two_column {
+    background-color: #fb4fb7;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+#left {
+    background-color: #e7c4c4;
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    width: 46%;
+}
+
+#right {
+    background-color: #feee;
+    border: 1px black solid;
+    padding: 20px;
+    float: right;
+    width: 46%;
+}
+
+#this {
+    float: left;
+    width: 30%;
+}
+
+#was {
+    float: left;
+    text-align: center;
+    width: 30%;
+}
+
+#internet {
+    float: right;
+    text-align: right;
+    width: 30%;
+}
+
+.wrapper {
+    background-color: #0a58c3;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #ffe700;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
