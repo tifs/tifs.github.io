@@ -1,3 +1,7 @@
+/* CSS element styles */
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:light,italic,bold,black|Nunito:light,regular,semi-bold,bold|Open+Sans:800,600,400|Playfair+Display:400,700|Abril+Fatface');
+
 html {
   box-sizing: border-box;
 }
@@ -5,3 +9,100 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  font-family: Nunito, sans-serif;
+  font-size: 20px;
+  background: yellow;
+}
+
+header {
+  font-family: Rubik, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  display: inline;
+
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: inline;
+  float: right;
+  background-color: #FFE2B8;
+}
+
+nav li {
+  display: none;
+}
+
+
+footer {
+  float: right;
+  width: 100%;
+  text-align: right;
+  background-color: #FFE2B8;
+}
+
+/* CSS classes */
+
+.nav-bar {
+  display: inline;
+  background-color: #FFFFFF;
+}
+
+.homepage-para {
+  font-family: Rubik, sans-serif;
+  font-size: 2em;
+  width: 25em;
+  margin: auto;
+  background-color: #E89C6C;
+}
+
+.wrapper {
+  padding: 2em;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: #FF957E;
+}
+
+.intro {
+  width: 80%;
+  margin: auto;
+}
+
+.intro-title {
+  font-size: 4rem;
+  font-family: 'Rubik', sans-serif;
+  /*font-weight: 700;*/
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -.03em;
+  margin-bottom: 4rem;
+  }
+
+  .intro-head {
+  text-align: left;
+  letter-spacing: -.02px;
+  font-size: 2.2rem;
+  font-family: 'Rubik', sans-serif;
+  /* font-weight: bold; */
+  font-style: italic;
+}
+
+.intro-body {
+  padding-top: 0px;
+  font-size: 1.2rem;
+  font-family: 'Nunito', sans-serif;
+  width: 30em;
+  text-align: left;
+}
+
