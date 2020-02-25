@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:light,italic,bold,black|Nunito:light,regular,semi-bold,bold|Open+Sans:800,600,400|Playfair+Display:400,700|Abril+Fatface');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  width: 100%;
+  background: green;
+}
+
+h1 {
+  font-size: 7em;
+  /*background-clip: text;*/
+  /*text-fill-color: transparent;*/
+  background: -webkit-linear-gradient(180deg, rgba(255,0,0,1) 10%, rgba(0,0,255,1) 50%, rgba(255,255,0,1) 65%, rgba(255,0,255,1) 85%);
+  /*background: -webkit-linear-gradient(180deg, red 10%, 30%, blue 90%);*/
+  /*background: -webkit-linear-gradient(#eee, #333);*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
