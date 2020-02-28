@@ -2,6 +2,25 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rubik:light,italic,bold,black|Nunito:light,regular,semi-bold,bold|Open+Sans:800,600,400|Playfair+Display:400,700|Abril+Fatface');
 
+/* media queries i'm not quite ready to use, listed in order for desktop first */
+/*
+@media screen and (max-width: 800px) {
+  .wrapper {
+    grid-template-columns: ;
+  }
+/* more code goes in here */
+/* } */
+
+/*@media screen and (max-width: 500px) {
+  .wrapper {
+    grid-template-columns: ;
+  }
+/* more code goes in here */
+/* } */
+
+
+}*/
+
 html {
   box-sizing: border-box;
 }
@@ -20,8 +39,9 @@ header {
   font-family: Rubik, sans-serif;
   font-weight: bold;
   font-size: 3em;
+  text-align: left;
   display: inline;
-
+  background: green;
 }
 
 img {
@@ -34,48 +54,80 @@ a {
 }
 
 nav {
-  display: inline;
+  display: inline-block;
+  /* float right works but i don't think in the way i want it to */
   float: right;
+  /*text-align: right;*/
   background-color: #FFE2B8;
+  /*grid-area: nv;*/
+  /*justify-self: stretch;*/
 }
+
+
+nav ul {
+  display: inline-block;
+}
+
+/*nav ul:hover {
+}*/
 
 nav li {
   display: none;
 }
 
+section {
+  grid-area: mn;
+}
 
 footer {
-  float: right;
-  width: 100%;
-  text-align: right;
+  /*float: right;*/
+  /*width: 100%;*/
+  /*text-align: right;*/
   background-color: #FFE2B8;
+  grid-area: ft;
+  place-self: end;
 }
 
 /* CSS classes */
+.grid {
+  display: grid;
+  min-height: calc(100vh - 50px);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 20% auto 20%;
+  grid-gap: 1.5em;
+  grid-template-areas: "hd hd hd hd hd hd hd hd hd hd hd hd"
+                       ".  .  mn mn mn mn mn mn mn mn .  ."
+                       "ft ft ft ft ft ft ft ft ft ft ft ft";
+  align-content: space-between;
+  background: grey;
+}
 
 .nav-bar {
-  display: inline;
+  width: 100%;
+  display: inline-block;
   background-color: #FFFFFF;
+  grid-area: hd;
 }
 
 .homepage-para {
   font-family: Rubik, sans-serif;
   font-size: 2em;
-  width: 25em;
-  margin: auto;
+  /*width: 25em;*/
+  /*margin: auto;*/
   background-color: #E89C6C;
 }
 
+/* trying to use css grid (.grid) instead */
 .wrapper {
-  padding: 2em;
-  width: 90%;
+  /*padding: 2em;*/
+  /*width: 90%;*/
   margin: auto;
-  margin-top: 5%;
+/*  margin-top: 5%;*/
   background-color: #FF957E;
-  min-height: calc(100vh - 150px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /*min-height: calc(100vh - 150px);*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
 }
 
 .intro {
