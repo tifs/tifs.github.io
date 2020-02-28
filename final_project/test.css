@@ -29,6 +29,12 @@ section {
   min-height: 100vh;
 }
 
+/* this could be a good alt */
+/*.slide {
+    height: 100vh;
+}*/
+
+
 h1 {
   font-size: 7em;
   /*background-clip: text;*/
