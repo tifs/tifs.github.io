@@ -3,19 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:light,italic,bold,black|Nunito:light,regular,semi-bold,bold|Open+Sans:800,600,400|Playfair+Display:400,700|Abril+Fatface');
 
 /* media queries i'm not quite ready to use, listed in order for desktop first */
-/*
-@media screen and (max-width: 800px) {
-  .wrapper {
-    grid-template-columns: ;
-  }
-/* more code goes in here */
-/* } */
+
 
 /*@media screen and (max-width: 500px) {
   .wrapper {
     grid-template-columns: ;
   }
-/* more code goes in here */
+/* more code goes in here
 /* } */
 
 
@@ -89,7 +83,7 @@ footer {
 }
 
 /* CSS classes */
-.grid {
+.wrapper {
   display: grid;
   min-height: calc(100vh - 50px);
   grid-template-columns: repeat(12, 1fr);
@@ -161,4 +155,12 @@ footer {
   width: 30em;
   text-align: left;
 }
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    grid-template-columns: ;
+  }
+/* more code goes in here */
+
+ }
 
