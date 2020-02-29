@@ -147,7 +147,7 @@ footer {
 
   .intro-head {
   text-align: left;
-  letter-spacing: -.02px;
+  letter-spacing: -.002em;
   font-size: 2.2rem;
   font-family: 'Rubik', sans-serif;
   /* font-weight: bold; */
@@ -155,7 +155,7 @@ footer {
 }
 
 .intro-body {
-  padding-top: 0px;
+  padding-top: 0;
   font-size: 1.2rem;
   font-family: 'Nunito', sans-serif;
   width: 30em;
