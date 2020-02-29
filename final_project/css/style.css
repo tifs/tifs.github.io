@@ -93,7 +93,7 @@ footer {
                        ".  .  mn mn mn mn mn mn mn mn .  ."
                        "ft ft ft ft ft ft ft ft ft ft ft ft";
   align-content: space-between;
-  background: grey;
+  background-color: #FF957E;
 }
 
 .nav-bar {
@@ -112,17 +112,17 @@ footer {
 }
 
 /* trying to use css grid (.grid) instead */
-.wrapper {
+/*.wrapper {*/
   /*padding: 2em;*/
   /*width: 90%;*/
-  margin: auto;
+  /*margin: auto;*/
 /*  margin-top: 5%;*/
-  background-color: #FF957E;
+  /*background-color: #FF957E;*/
   /*min-height: calc(100vh - 150px);*/
   /*display: flex;*/
   /*flex-direction: column;*/
   /*justify-content: space-between;*/
-}
+/*}*/
 
 .intro {
   width: 80%;
@@ -157,8 +157,22 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+
   .wrapper {
-    grid-template-columns: ;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    min-height: calc(100vh - 50px);
+    /*grid-template-columns: repeat(12, 1fr);*/
+    grid-template-rows: 20% auto 20%;
+    grid-gap: 1.5em;
+    grid-template-areas: ".  hd hd hd hd ."
+                         ".  mn mn mn mn ."
+                         "ft ft ft ft ft ft";
+    align-content: space-between;
+    background-color: grey;
   }
 /* more code goes in here */
 
