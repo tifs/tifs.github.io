@@ -59,7 +59,12 @@ nav li {
 }
 
 section {
-  grid-area: mn;
+  /*grid-area: mn;*/
+}
+
+iframe {
+  width: 100%;
+  /*min-width: 300px;*/
 }
 
 footer {
@@ -85,9 +90,73 @@ footer {
   background-color: #FF957E;
 }
 
+.dropbox {
+  display: grid;
+  min-height: calc(100vh - 50px);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto; /*repeat(9, 200px);*/
+  grid-gap: 1.5em;
+  grid-template-areas: "hd  hd  hd    hd   hd   hd   hd   hd   hd   hd   hd   hd"
+                       ".   .   .     in   in   in   in   in   in   .    .    ."
+                       ".   sum1 sum1 sum1 sum1 sum1 sum1 sum1 sum1 sum1 sum1 ."
+                       "im1 im1  im1  im1  .    .    .    .    im3  im3  im3  im3"
+                       "im1 im1  im1  im1  im2  im2  im2  im2  im3  im3  im3  im3"
+                       "im4 im4  im4  im4  im2  im2  im2  im2  im5  im5  im5  im5"
+                       "im4 im4  im4  im4  .     .     .  .    im5  im5  im5  im5"
+                       /*".   .    .    .    .     .     .     .      .  .  .  ."*/
+                       ".   .    .    sum2 sum2 sum2 sum2 sum2 sum2 .  . ."
+                       ".   vd1  vd1  vd1  vd1  vd1  vd1  vd1  vd1  vd1  vd1  ."
+                       ".   vd2  vd2  vd2  vd2  vd2  vd2  vd2  vd2  vd2  vd2  ."
+                       "ft  ft   ft   ft   ft   ft   ft   ft   ft   ft   ft   ft";
+  align-content: space-between;
+  background-color: white;
+}
+
+.sum1 {
+  grid-area: sum1;
+  background: aqua;
+}
+
+.sum2 {
+  grid-area: sum2;
+}
+
+.im1 {
+  grid-area: im1;
+  background: purple;
+}
+
+.im2 {
+  grid-area: im2;
+  background: orange;
+}
+
+.im3 {
+  grid-area: im3;
+  background: silver;
+}
+
+.im4 {
+  grid-area: im4;
+}
+
+.im5 {
+  grid-area: im5;
+}
+
+.vd1 {
+  grid-area: vd1;
+  /*min-width: 300px;*/
+  background: coral;
+}
+
+.vd2 {
+  grid-area: vd2;
+  background: darkorchid;
+}
+
 .nav-bar {
   width: 100%;
-  display: inline-block;
   background-color: #FFFFFF;
   grid-area: hd;
 }
@@ -114,8 +183,10 @@ footer {
 /*}*/
 
 .intro {
-  width: 80%;
-  margin: auto;
+  /*width: 80%;*/
+  /*margin: auto;*/
+  grid-area: in;
+  background: pink;
 }
 
 .intro-title {
@@ -126,6 +197,7 @@ footer {
   font-weight: bold;
   letter-spacing: -.03em;
   margin-bottom: 4rem;
+
   }
 
   .intro-head {
