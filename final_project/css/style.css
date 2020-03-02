@@ -59,12 +59,11 @@ nav li {
 }
 
 section {
-  /*grid-area: mn;*/
+  grid-area: mn;
 }
 
 iframe {
   width: 100%;
-  /*min-width: 300px;*/
 }
 
 footer {
