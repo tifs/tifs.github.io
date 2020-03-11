@@ -565,6 +565,14 @@ a {
   padding-bottom: -20px;
 }
 
+a:hover {
+  background: linear-gradient(to right, midnightblue, royalblue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: none;
+}
+
 ::selection {
   color: red;
   background: yellow;
