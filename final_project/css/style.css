@@ -25,6 +25,7 @@ header {
   font-weight: bold;
   font-size: 3em;
   text-align: left;
+  letter-spacing: -0.05em;
   display: inline;
   background: green;
   grid-area: head;
