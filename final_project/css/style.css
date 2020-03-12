@@ -539,7 +539,6 @@ blockquote p {
   text-align: center;
   font-weight: normal;
   letter-spacing: -.03em;
-  margin-bottom: 4rem;
 
   }
 
@@ -548,7 +547,6 @@ blockquote p {
   letter-spacing: -.002em;
   font-size: 1.8rem;
   font-family: 'Rubik', sans-serif;
-  /* font-weight: bold; */
   font-style: italic;
 }
 
