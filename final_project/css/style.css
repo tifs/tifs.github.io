@@ -17,7 +17,7 @@ body {
   /*font-family: Nunito, sans-serif;*/
   font-size: 20px;
   background: yellow;
-  /*line-height: 1.5em;*/
+  line-height: 1.5em;
 }
 
 header {
@@ -533,11 +533,11 @@ blockquote p {
 }
 
 .intro-title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Rubik', sans-serif;
   /*font-weight: 700;*/
   text-align: center;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: -.03em;
   margin-bottom: 4rem;
 
@@ -546,7 +546,7 @@ blockquote p {
   .intro-head {
   text-align: left;
   letter-spacing: -.002em;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-family: 'Rubik', sans-serif;
   /* font-weight: bold; */
   font-style: italic;
