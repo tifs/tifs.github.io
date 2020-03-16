@@ -52,20 +52,6 @@ blockquote {
   text-indent: -0.8em;
 }
 
-nav {
-/*  z-index: 1000;*/
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "working goofing about";
-  grid-gap: 1.5em;
-  /*align-content: space-between;*/
-  text-align: right;
-  background-color: #FFE2B8;
-  grid-area: nav;
-  /*justify-self: stretch;*/
-}
-
 .working {
   grid-area: working;
   background: lightgreen;
@@ -81,24 +67,62 @@ nav {
   background: lightskyblue;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  border-bottom: solid 2px black;
+  padding-bottom: -20px;
+}
+
+a:hover {
+  background: linear-gradient(to right, midnightblue, royalblue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: none;
+}
+
+nav {
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "working goofing about";
+  grid-gap: 1.5em;
+  align-content: space-between;
+  text-align: right;
+  /*text-decoration: none;*/
+  background-color: #FFE2B8;
+  grid-area: nav;
+  /*justify-self: stretch;*/
+}
+
+header a, nav a {
+  border-bottom: none;
+}
+
+nav ul {
+  font-size: 1.1em;
+}
+
 /*nav ul:hover {
 }*/
 
 nav li {
   display: none;
-  position: relative;
   /* set a fixed width on either this li element or on ul...also try percentages */
-  width: 100px;
-  /*font-size: 12px;*/
+  width: 140px;
+  font-size: 0.8em;
   /*visibility: hidden;*/
 }
 
 nav ul:hover li {
   /*z-index: 1000;*/
-  display: block;
-  /*visibility: visible;*/
+  display: inline-block;
+  visibility: visible;
   background: orange;
 }
+
 
 section {
   grid-area: main;
@@ -137,6 +161,7 @@ blockquote p {
   grid-area: para;
 }
 
+/* css grid classes for all pages, using a 12-column grid here */
 .index {
   display: grid;
   min-height: calc(100vh - 50px);
@@ -379,7 +404,7 @@ blockquote p {
 
   }
 
-  .intro-head {
+.intro-head {
   text-align: left;
   letter-spacing: -.002em;
   font-size: 1.8rem;
@@ -395,34 +420,19 @@ blockquote p {
   text-align: left;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  /*line-height: 0.5em;*/
-  margin: 0;
-  border-bottom: solid 2px black;
-  padding-bottom: -20px;
-}
-
-a:hover {
-  background: linear-gradient(to right, midnightblue, royalblue);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-bottom: none;
-}
 
 ::selection {
   color: red;
   background: yellow;
 }
 
-
+/* code for medium, tablet-sized screens */
 @media screen and (max-width: 800px) {
   body {
     font-size: 16px;
   }
 
+/* css grid classes for all pages, using a 6-column grid here */
   .index {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -620,12 +630,14 @@ a:hover {
 
  }
 
+/* code for small, phone-sized screens */
  @media screen and (max-width: 525px) {
 
   body {
     font-size: 14px;
   }
 
+/* css grid classes for all pages, using a 3-column grid here */
   .index {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
