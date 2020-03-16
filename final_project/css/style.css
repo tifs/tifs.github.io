@@ -121,8 +121,22 @@ footer {
   place-self: end;
 }
 
+blockquote {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "title"
+                       "para"
+}
 
-/* CSS classes */
+blockquote h4 {
+  grid-area: title;
+}
+
+blockquote p {
+  grid-area: para;
+}
+
 .index {
   display: grid;
   min-height: calc(100vh - 50px);
@@ -199,22 +213,6 @@ footer {
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
   align-content: space-between;
   background-color: white;
-}
-
-blockquote {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "title"
-                       "para"
-}
-
-blockquote h4 {
-  grid-area: title;
-}
-
-blockquote p {
-  grid-area: para;
 }
 
 .bt-edu {
