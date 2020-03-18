@@ -368,8 +368,88 @@ blockquote p {
   background-color: white;
 }
 
+.d1f {
+  display: grid;
+  min-height: calc(100vh - 50px);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px auto;
+  grid-gap: 1.5em;
+  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  .     ."
+                       ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  .     ."
+                       ".     vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  .     ."
+                       ".     vid4  vid4  vid4  vid4  vid4  vid4  vid4  vid4  vid4  .     ."
+                       ".     vid5  vid5  vid5  vid5  vid5  vid5  vid5  vid5  vid5  .     ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+  align-content: space-between;
+  background-color: white;
+}
+
+.th-gifs {
+  display: grid;
+  min-height: calc(100vh - 50px);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px auto;
+  grid-gap: 1.5em;
+  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     img1  img1  img1  img1  img1  img1  img1  img1  img1  img1  ."
+                       ".     img4  img4  img4  img4  img3  img3  img3  img3  img3  img3  ."
+                       ".     img5  img5  img5  img5  img3  img3  img3  img3  img3  img3  ."
+                       ".     .     img2  img2  img2  img2  img2  img2  img2  img2  .     ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+  align-content: space-between;
+  background-color: white;
+}
+
+.helium {
+  display: grid;
+  min-height: calc(100vh - 50px);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px auto;
+  grid-gap: 1.5em;
+  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+  align-content: space-between;
+  background-color: white;
+}
+
+.malkovich {
+  display: grid;
+  min-height: calc(100vh - 50px);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px auto;
+  grid-gap: 1.5em;
+  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     img6  img6  img6  img6  img3  img3  img3  img3  img3  img3  ."
+                       ".     img1  img1  img1  img1  img3  img3  img3  img3  img3  img3  ."
+                       ".     img2  img2  img2  img2     img3  img3  img3  img3  img3  img3  ."
+                       ".     img2  img2  img2  img2  img5  img5  img5  img4  img4  img4  ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+  align-content: space-between;
+  background-color: white;
+}
+
+.sfbaes {
+  display: grid;
+  min-height: calc(100vh - 50px);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px auto;
+  grid-gap: 1.5em;
+  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+  align-content: space-between;
+  background-color: white;
+}
+
+
 /* connecting written summary classes to grid areas of the same name */
-.sum1 { grid-area: sum1; background: aqua; } .sum2 { grid-area: sum2; } .sum3 { grid-area: sum3; } .sum4 { grid-area: sum4; } .sum5 { grid-area: sum5; } .sum6 { grid-area: sum6; }
+.sum1 { grid-area: sum1; background: aqua; } .sum2 { grid-area: sum2; } .sum3 { grid-area: sum3; } .sum4 { grid-area: sum4; } .sum2 { grid-area: sum5; } .sum6 { grid-area: sum6; }
 
 /* connecting image classes to grid areas of the same name */
 .img1 { grid-area: img1; background: purple; } .img2 { grid-area: img2; background: orange; } .img3 { grid-area: img3; background: silver; } .img4 { grid-area: img4; } .img5 { grid-area: img5; } .img6 { grid-area: img6; } .img7 { grid-area: img7; } .img8 { grid-area: img8; } .img9 { grid-area: img9; } .img10 { grid-area: img10; } .img11 { grid-area: img11; } .img12 { grid-area: img12; } .img13 { grid-area: img13; } .img14 { grid-area: img14; } .img15 { grid-area: img15; } .img16 { grid-area: img16; } .img17 { grid-area: img17; } .img18 { grid-area: img18; } .img19 { grid-area: img19; } .img20 { grid-area: img20; } .img21 { grid-area: img21; } .img22 { grid-area: img22; } .img23 { grid-area: img23; } .img24 { grid-area: img24; } .img25 { grid-area: img25; } .img26 { grid-area: img26; }
