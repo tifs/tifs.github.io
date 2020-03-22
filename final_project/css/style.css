@@ -79,6 +79,10 @@ nav ul:hover li {
   background: orange;
 }
 
+.story {
+  grid-area: story;
+}
+
 header {
  /* width: 100%;
   height: 100%;
@@ -195,10 +199,10 @@ blockquote p {
   display: grid;
   min-height: calc(100vh - 50px);
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px auto 20%;
+  grid-template-rows: 100px auto;
   grid-gap: 1.5em;
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     abt   abt   abt   abt   abt   abt   abt   abt   .     ."
+                       ".     .     story story story story story story story story .     ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
   align-content: space-between;
   background-color: rgba(256,256,256,0.6);
@@ -219,7 +223,7 @@ blockquote p {
                        "img1  img1  img1  img1  img2  img2  img2  img2  img3  img3  img3  img3"
                        "img4  img4  img4  img4  img2  img2  img2  img2  img5  img5  img5  img5"
                        "img4  img4  img4  img4  .     .     .     .     img5  img5  img5  img5"
-                       ".     .     .     sum2  sum2  sum2  sum2  sum2  sum2  .     .     ."
+                       ".     .     .     sum3  sum3  sum3  sum3  sum3  sum3  .     .     ."
                        ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
                        ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
@@ -242,7 +246,7 @@ blockquote p {
                        "img6  img6  img6  img6  img6  img6  img6  img6  img7  img7  img7  img7"
                        "img8  img8  img8  img8  img8  img8  img9  img9  img9  img9  img9  img9"
                        "img10 img10 img10 img10 img11 img11 img11 img11 img11 img11 img11 img11"
-                       ".     .     .     sum2  sum2  sum2  sum2  sum2  sum2  .     .     ."
+                       ".     .     .     sum6  sum6  sum6  sum6  sum6  sum6  .     .     ."
                        "img12 img12 img12 img12 img13 img13 img13 img13 img14 img14 img14 img14"
                        "img15 img15 img15 img15 img15 blk1  blk1  blk1  blk1  blk1  blk1  blk1"
                        ".     .     .     sum3  sum3  sum3  sum3  sum3  sum3  .     .     ."
@@ -250,7 +254,7 @@ blockquote p {
                        ".     .     .     sum4  sum4  sum4  sum4  sum4  sum4  .     .     ."
                        "img19 img19 img19 img19 img19 img19 img19 img20 img20 img20 img20 img20"
                        "img21 img21 img21 img21 img21 img21 img21 img22 img22 img22 img22 img22"
-                       ".     .     .     sum5  sum5  sum5  sum5  sum5  sum5  .     .     ."
+                       ".     .     .     sum7  sum7  sum7  sum7  sum7  sum7  .     .     ."
                        ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
                        ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
@@ -302,8 +306,8 @@ blockquote p {
   grid-gap: 1.5em;
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     .     .     in    in    in    in    in    in    .     .    ."
-                       "img1  img1  img1  img1  img1  img1  img1  img1  sum1  sum1  sum1  sum1"
-                       "sum2  sum2  sum2  sum2  img2  img2  img2  img2  img2  img2  img2  img2"
+                       ".     img1  img1  img1  img1  img1  img1  img1  sum1  sum1  sum1  sum1"
+                       "sum4  sum4  sum4  sum4  img2  img2  img2  img2  img2  img2  img2  img2"
                        ".     img3  img3  img3  img3  img3  sum3  sum3  sum3  sum3  sum3  ."
                        ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
@@ -322,7 +326,7 @@ blockquote p {
                        ".     .     .     in    in    in    in    in    in    .     .     ."
                        ".     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  ."
                        "img1  img1  img1  img1  img2  img2  img2  img2  img3  img3  img3  img3"
-                       ".     sum2  sum2  sum2  sum2  sum2  sum2  sum2  sum2  sum2  sum2  ."
+                       ".     sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  ."
                        ".     img4  img4  img4  img4  img4  img4  img4  img4  img4  img4  ."
                        ".     img5  img5  img6  img6  img7  img7  img8  img8  img9  img9  ."
                        "img10 img10 img10 img10 img10 img10 .     .     .     .     .     ."
@@ -364,7 +368,7 @@ blockquote p {
                        "img4  img4  img4  img4  img4  img4  .     .     .     .     .     ."
                        ".     .     .     img5  img5  img5  img5  img5  img5  .     .     ."
                        ".     .     .     .     .     .     img6  img6  img6  img6  img6  img6"
-                       ".     .     sum2  sum2  sum2  sum2  sum2  sum2  sum2  sum2  .     ."
+                       ".     .     sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  .     ."
                        ".     img7  img7  img7  img7  img7  img7  img7  img8  img8  img8  ."
                        ".     .     sum3  sum3  sum3  sum3  sum3  sum3  sum3  sum3  .     ."
                        ".     img9  img9  img9  img9  img9  img9  img10 img10 img10 .     ."
@@ -461,7 +465,7 @@ blockquote p {
 
 
 /* connecting written summary classes to grid areas of the same name */
-.sum1 { grid-area: sum1; background: aqua; } .sum2 { grid-area: sum2; } .sum3 { grid-area: sum3; } .sum4 { grid-area: sum4; } .sum2 { grid-area: sum5; } .sum6 { grid-area: sum6; }
+.sum1 { grid-area: sum1; background: aqua; } .sum2 { grid-area: sum2; } .sum3 { grid-area: sum3; } .sum4 { grid-area: sum4; } .sum2 { grid-area: sum5; } .sum6 { grid-area: sum6; } .sum7 { grid-area: sum7; }
 
 /* connecting image classes to grid areas of the same name */
 .img1 { grid-area: img1; background: purple; } .img2 { grid-area: img2; background: orange; } .img3 { grid-area: img3; background: silver; } .img4 { grid-area: img4; } .img5 { grid-area: img5; } .img6 { grid-area: img6; } .img7 { grid-area: img7; } .img8 { grid-area: img8; } .img9 { grid-area: img9; } .img10 { grid-area: img10; } .img11 { grid-area: img11; } .img12 { grid-area: img12; } .img13 { grid-area: img13; } .img14 { grid-area: img14; } .img15 { grid-area: img15; } .img16 { grid-area: img16; } .img17 { grid-area: img17; } .img18 { grid-area: img18; } .img19 { grid-area: img19; } .img20 { grid-area: img20; } .img21 { grid-area: img21; } .img22 { grid-area: img22; } .img23 { grid-area: img23; } .img24 { grid-area: img24; } .img25 { grid-area: img25; } .img26 { grid-area: img26; }
@@ -565,7 +569,7 @@ blockquote p {
     grid-template-rows: 100px auto;
     grid-gap: 1.5em;
     grid-template-areas: "head  head  head  nav   nav   nav"
-                         ".     abt   abt   abt   abt   ."
+                         ".     story story story story ."
                          "foot  foot  foot  foot  foot  foot";
     align-content: space-between;
     background-color: #FF957E;
@@ -772,7 +776,7 @@ blockquote p {
   grid-gap: 1.5em;
   grid-template-areas: ".     head  ."
                        ".     nav   ."
-                       "abt   abt   abt"
+                       "story story story"
                        "foot  foot  foot";
   align-content: space-between;
   background-color: #FF957E;
