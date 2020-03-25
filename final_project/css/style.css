@@ -58,38 +58,62 @@ a:hover {
 
 nav {
   z-index: 1000;
+  width: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "working goofing about";
-  grid-gap: 1.5em;
+  grid-gap: 1em;
   margin-right: 2%;
-  place-self: start stretch;
+  font-size: 1.1em;
   font-family: Rubik, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-align: right;
-  /*text-decoration: none;*/
-  /*background-color: pink;*/
+  background-color: pink;
   grid-area: nav;
 }
+
+.working {
+  grid-area: working;
+  background: lightgreen;
+}
+
+.goofing {
+  grid-area: goofing;
+  background: lightseagreen;
+}
+
+.about {
+  grid-area: about;
+  background: lightskyblue;
+}
+
+
+/* connecting written summary classes to grid areas of the same name */
+.sum1 { grid-area: sum1; background: aqua; } .sum2 { grid-area: sum2; } .sum3 { grid-area: sum3; } .sum4 { grid-area: sum4; } .sum2 { grid-area: sum5; } .sum6 { grid-area: sum6; } .sum7 { grid-area: sum7; }
+
+/* connecting image classes to grid areas of the same name */
+.img1 { grid-area: img1; background: purple; } .img2 { grid-area: img2; background: orange; } .img3 { grid-area: img3; background: silver; } .img4 { grid-area: img4; } .img5 { grid-area: img5; } .img6 { grid-area: img6; } .img7 { grid-area: img7; } .img8 { grid-area: img8; } .img9 { grid-area: img9; } .img10 { grid-area: img10; } .img11 { grid-area: img11; } .img12 { grid-area: img12; } .img13 { grid-area: img13; } .img14 { grid-area: img14; } .img15 { grid-area: img15; } .img16 { grid-area: img16; } .img17 { grid-area: img17; } .img18 { grid-area: img18; } .img19 { grid-area: img19; } .img20 { grid-area: img20; } .img21 { grid-area: img21; } .img22 { grid-area: img22; } .img23 { grid-area: img23; } .img24 { grid-area: img24; } .img25 { grid-area: img25; } .img26 { grid-area: img26; }
+
+/* connecting video classes to grid areas of the same name */
+.vid1 { grid-area: vid1; /*min-width: 300px;*/ background: coral; } .vid2 { grid-area: vid2; background: darkorchid; } .vid3 { grid-area: vid3; background: darkorchid; } .vid4 { grid-area: vid4; background: darkorchid; } .vid5 { grid-area: vid5; background: darkorchid; } .vid6 { grid-area: vid6; background: darkorchid; } .vid7 { grid-area: vid7; background: darkorchid; } .vid8 { grid-area: vid8; background: darkorchid; }
+
 
 header a, nav a {
   border-bottom: none;
 }
 
-nav ul {
-  font-size: 1.1em;
-}
 
 nav li {
   height: 0;
   /*display: none;*/
   /*place-self: flex-start auto;*/
   /* set a fixed width on either this li element or on ul...also try percentages */
-  width: 140px;
+  /*width: 100%;*/
   font-size: 0.8em;
+  font-weight: 300;
+  line-height: 1.1em;
   visibility: hidden;
 }
-
 
 
 nav ul:hover li {
@@ -146,21 +170,6 @@ hr {
 /* moving the quotes of a blockquote left a smidge, so the text is all flush to the left  */
 blockquote {
   text-indent: -0.8em;
-}
-
-.working {
-  grid-area: working;
-  /*background: lightgreen;*/
-}
-
-.goofing {
-  grid-area: goofing;
-  /*background: lightseagreen;*/
-}
-
-.about {
-  grid-area: about;
-  /*background: lightskyblue;*/
 }
 
 
@@ -490,22 +499,6 @@ blockquote p {
   border: 11px solid white;
 }
 
-
-/* connecting written summary classes to grid areas of the same name */
-.sum1 { grid-area: sum1; background: aqua; } .sum2 { grid-area: sum2; } .sum3 { grid-area: sum3; } .sum4 { grid-area: sum4; } .sum2 { grid-area: sum5; } .sum6 { grid-area: sum6; } .sum7 { grid-area: sum7; }
-
-/* connecting image classes to grid areas of the same name */
-.img1 { grid-area: img1; background: purple; } .img2 { grid-area: img2; background: orange; } .img3 { grid-area: img3; background: silver; } .img4 { grid-area: img4; } .img5 { grid-area: img5; } .img6 { grid-area: img6; } .img7 { grid-area: img7; } .img8 { grid-area: img8; } .img9 { grid-area: img9; } .img10 { grid-area: img10; } .img11 { grid-area: img11; } .img12 { grid-area: img12; } .img13 { grid-area: img13; } .img14 { grid-area: img14; } .img15 { grid-area: img15; } .img16 { grid-area: img16; } .img17 { grid-area: img17; } .img18 { grid-area: img18; } .img19 { grid-area: img19; } .img20 { grid-area: img20; } .img21 { grid-area: img21; } .img22 { grid-area: img22; } .img23 { grid-area: img23; } .img24 { grid-area: img24; } .img25 { grid-area: img25; } .img26 { grid-area: img26; }
-
-/* connecting video classes to grid areas of the same name */
-.vid1 { grid-area: vid1; /*min-width: 300px;*/ background: coral; } .vid2 { grid-area: vid2; background: darkorchid; } .vid3 { grid-area: vid3; background: darkorchid; } .vid4 { grid-area: vid4; background: darkorchid; } .vid5 { grid-area: vid5; background: darkorchid; } .vid6 { grid-area: vid6; background: darkorchid; } .vid7 { grid-area: vid7; background: darkorchid; } .vid8 { grid-area: vid8; background: darkorchid; }
-
-
-.nav-bar {
-  /*width: 100%;*/
-  background-color: #FFFFFF;
-  /*grid-area: nav;*/
-}
 
 .homepage-para {
   font-family: Rubik, sans-serif;
