@@ -66,7 +66,7 @@ nav {
   place-self: start stretch;
   text-align: right;
   /*text-decoration: none;*/
-  background-color: pink;
+  /*background-color: pink;*/
   grid-area: nav;
 }
 
@@ -115,7 +115,7 @@ header {
   margin-left: 2%;
   letter-spacing: -0.05em;
   display: inline;
-  background: green;
+  /*background: green;*/
   grid-area: head;
 }
 
@@ -126,13 +126,19 @@ img {
 
 
 p {
+  text-indent: 2em;
+  max-width: 33em
   /*margin-bottom: 1.5em;*/
 }
 
+p + p {
+  /*line-height: 0.5em*/
+}
+
 hr {
-  border: 1px dashed black;
-  width: 80%;
-  margin-left: 0;
+  border: 0.5px dashed black;
+  width: 50%;
+  margin: 1.5em auto;
 }
 
 /* moving the quotes of a blockquote left a smidge, so the text is all flush to the left  */
@@ -142,17 +148,17 @@ blockquote {
 
 .working {
   grid-area: working;
-  background: lightgreen;
+  /*background: lightgreen;*/
 }
 
 .goofing {
   grid-area: goofing;
-  background: lightseagreen;
+  /*background: lightseagreen;*/
 }
 
 .about {
   grid-area: about;
-  background: lightskyblue;
+  /*background: lightskyblue;*/
 }
 
 
@@ -525,7 +531,7 @@ blockquote p {
   /*width: 80%;*/
   /*margin: auto;*/
   grid-area: in;
-  background: pink;
+  /*background: pink;*/
 }
 
 .intro-title {
