@@ -64,6 +64,8 @@ nav {
   grid-gap: 1.5em;
   margin-right: 2%;
   place-self: start stretch;
+  font-family: Rubik, sans-serif;
+  font-weight: 300;
   text-align: right;
   /*text-decoration: none;*/
   /*background-color: pink;*/
