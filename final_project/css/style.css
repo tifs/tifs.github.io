@@ -141,7 +141,7 @@ header {
   margin-left: 2%;
   letter-spacing: -0.04em;
   display: inline;
-  background: green;
+  background: tomato;
   grid-area: head;
 }
 
@@ -152,9 +152,12 @@ img {
 
 
 p {
-  text-indent: 2em;
-  max-width: 33em
+  /*text-indent: 2em;*/
+  text-align: left;
+  margin: auto;
+  max-width: 33em;
   /*margin-bottom: 1.5em;*/
+  background-color: springgreen;
 }
 
 p + p {
@@ -217,7 +220,7 @@ blockquote p {
 }
 
 /* css grid classes for all pages, using a 12-column grid here */
-.twelve-col {
+.gridz {
   display: grid;
   min-height: calc(100vh - 50px);
   grid-template-columns: repeat(12, 1fr);
@@ -237,14 +240,14 @@ blockquote p {
 
 .about-page {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     story story story story story story story story .     ."
+                       ".     story story story story story story story story story story ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 
 .dropbox {
   grid-template-areas: "head  head  head  head  head  head   nav   nav  nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  ."
                        "img1  img1  img1  img1  .     .     .     .     img3  img3  img3  img3"
                        "img1  img1  img1  img1  img2  img2  img2  img2  img3  img3  img3  img3"
@@ -258,7 +261,7 @@ blockquote p {
 
 .braintree {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  ."
                        "img1  img1  img1  img1  img1  img1  img2  img2  img2  img2  img2  img2"
                        "img3  img3  img3  img3  img4  img4  img4  img4  img5  img5  img5  img5"
@@ -281,7 +284,7 @@ blockquote p {
 
 .bt-edu {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
                        ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  ."
                        ".     vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  ."
@@ -292,7 +295,7 @@ blockquote p {
 
 .codeology {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
                        ".     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
@@ -300,7 +303,7 @@ blockquote p {
 
 .contest-of-champions {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .    ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     img1  img1  img1  img1  img1  img1  img1  sum1  sum1  sum1  sum1"
                        "sum4  sum4  sum4  sum4  img2  img2  img2  img2  img2  img2  img2  img2"
                        ".     img3  img3  img3  img3  img3  sum3  sum3  sum3  sum3  sum3  ."
@@ -310,7 +313,7 @@ blockquote p {
 
 .impossible-foods {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  ."
                        "img1  img1  img1  img1  img2  img2  img2  img2  img3  img3  img3  img3"
                        ".     sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  ."
@@ -324,7 +327,7 @@ blockquote p {
 
 .mario-sonic {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
                        ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
@@ -332,7 +335,7 @@ blockquote p {
 
 .ups {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     .     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  .     ."
                        "img1  img1  img1  img1  img1  img1  img1  img1  img1  img2  img2  img2"
                        ".     .     img3  img3  img3  img3  img3  img3  img3  img3  .     ."
@@ -349,7 +352,7 @@ blockquote p {
 
 .d1f {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  .     ."
                        ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  .     ."
                        ".     vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  .     ."
@@ -360,7 +363,7 @@ blockquote p {
 
 .th-gifs {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     img1  img1  img1  img1  img1  img1  img1  img1  img1  img1  ."
                        ".     img4  img4  img4  img4  img3  img3  img3  img3  img3  img3  ."
                        ".     img5  img5  img5  img5  img3  img3  img3  img3  img3  img3  ."
@@ -370,13 +373,13 @@ blockquote p {
 
 .helium {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .malkovich {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     img6  img6  img6  img6  img3  img3  img3  img3  img3  img3  ."
                        ".     img1  img1  img1  img1  img3  img3  img3  img3  img3  img3  ."
                        ".     img2  img2  img2  img2     img3  img3  img3  img3  img3  img3  ."
@@ -386,7 +389,7 @@ blockquote p {
 
 .sfbaes {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     .     .     in    in    in    in    in    in    .     .     ."
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
@@ -394,10 +397,11 @@ blockquote p {
 
 .homepage-para {
   font-family: Rubik, sans-serif;
-  font-size: 2.5em;
-  /*line-height: 1.3em;*/
+  font-size: 2.4em;
+  max-width: 18em;
+  line-height: 1em;
   /*width: 25em;*/
-  /*margin: auto;*/
+  margin: auto;
   background-color: #E89C6C;
 }
 
@@ -416,36 +420,41 @@ blockquote p {
 
 .intro {
   /*width: 80%;*/
-  /*margin: auto;*/
+  margin: auto;
   grid-area: in;
   /*background: pink;*/
 }
 
 .intro-title {
+  max-width: 11em;
+  margin: auto;
   font-size: 3rem;
   font-family: 'Rubik', sans-serif;
-  /*font-weight: 700;*/
+  line-height: 1em;
   text-align: center;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: -.03em;
-
+  background-color: purple;
   }
 
 .intro-head {
+  max-width: 20em;
   text-align: left;
   letter-spacing: -.002em;
   font-size: 1.8rem;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
   font-style: italic;
+  background-color: purple;
 }
 
 .intro-body {
+  max-width: 30em;
   padding-top: 0;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   /*font-family: 'Nunito', sans-serif;*/
-  width: 30em;
   text-align: left;
+  background-color: purple;
 }
 
 
@@ -457,70 +466,82 @@ blockquote p {
 /* code for medium, tablet-sized screens */
 @media screen and (max-width: 800px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
     margin: 4% 1.5%;
   }
 
   header {
-  font-size: 3.1em;
-  padding-top: 4%;
-  margin-left: 2%;
-  letter-spacing: -0.04em;
-  display: inline;
-  grid-area: head;
+    font-size: 3.1rem;
+    padding-top: 4%;
+    margin-left: 1.5%;
 }
 
-nav {
-  z-index: 1000;
-  width: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "working goofing about";
-  grid-gap: 1em;
-  margin-right: 2%;
-  font-size: 1.1em;
-  font-family: Rubik, sans-serif;
-  font-weight: 400;
-  text-align: right;
-  background-color: pink;
-  grid-area: nav;
+  nav {
+    margin-right: 1.5%;
 }
 
-/* css grid classes for all pages, using a 6-column grid here */
-  .index {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    min-height: calc(100vh - 25px);
-    grid-template-rows: 15% auto 15%;
-    grid-gap: 1.5em;
-    grid-template-areas: "head  head  head  nav   nav   nav"
-                         ".     main  main  main  main  ."
-                         "foot  foot  foot  foot  foot  foot";
-    align-content: space-between;
-    background-color: grey;
+  p {
+    max-width: 33em;
   }
 
-  .about-page {
-    display: grid;
+  .intro-title {
+    max-width: 11em;
+    margin: auto;
+    font-size: 2.4em;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -.03em;
+    background-color: purple;
+  }
+
+  .intro-head {
+    max-width: 20em;
+    text-align: left;
+    font-size: 1.5em;
+    letter-spacing: -.002em;
+
+  }
+
+  .intro-body {
+    max-width: 25em;
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  .homepage-para {
+    font-size: 2em;
+    max-width: 15em;
+    line-height: 1.1em;
+  }
+
+/* css grid classes for all pages, using a 6-column grid here */
+  .gridz {
     grid-template-columns: repeat(6, 1fr);
     min-height: calc(100vh - 25px);
     grid-template-rows: 100px auto;
-    grid-gap: 1.5em;
+    grid-gap: 1.2em;
+    background-color: grey;
+  }
+
+  .index {
+    grid-template-rows: 15% auto 15%;
+    grid-template-areas: "head  head  head  nav   nav   nav"
+                         "main  main  main  main  main  main"
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .about-page {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          ".     story story story story ."
                          "foot  foot  foot  foot  foot  foot";
     align-content: space-between;
-    background-color: #FF957E;
   }
 
   .dropbox {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    min-height: calc(100vh - 25px);
-    grid-template-rows: 100px auto;
-    grid-gap: 1.5em;
     grid-template-areas: "head  head  head  nav   nav   nav"
-                         ".     in    in    in    in    ."
+                         "in    in    in    in    in    in"
                          ".     sum1  sum1  sum1  sum1  ."
                          "img1  img1  .     .     img3  img3"
                          "img1  img1  img2  img2  img3  img3"
@@ -530,18 +551,11 @@ nav {
                          "vid1  vid1  vid1  vid1  vid1  vid1"
                          "vid2  vid2  vid2  vid2  vid2  vid2"
                          "foot  foot  foot  foot  foot  foot";
-    align-content: space-between;
-    background-color: grey;
   }
 
   .braintree {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    min-height: calc(100vh - 25px);
-    grid-template-rows: 100px auto;
-    grid-gap: 1.5em;
     grid-template-areas: "head  head  head  nav   nav   nav"
-                         ".     in    in    in    in    ."
+                         "in    in    in    in    in    in"
                          ".     sum1  sum1  sum1  sum1  ."
                          "img1  img1  img1  img2  img2  img2"
                          "img3  img3  img4  img4  img5  img5"
@@ -560,68 +574,40 @@ nav {
                          "vid1  vid1  vid1  vid1  vid1  vid1"
                          "vid2  vid2  vid2  vid2  vid2  vid2"
                          "foot  foot  foot  foot  foot  foot";
-    align-content: space-between;
-    background-color: grey;
   }
 
   .bt-edu {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    min-height: calc(100vh - 25px);
-    grid-template-rows: 100px auto;
-    grid-gap: 1.5em;
     grid-template-areas: "head  head  head  nav   nav   nav"
-                         ".     in    in    in    in    ."
+                         "in    in    in    in    in    in"
                          "vid1  vid1  vid1  vid1  vid1  vid1"
                          "vid2  vid2  vid2  vid2  vid2  vid2"
                          "vid3  vid3  vid3  vid3  vid3  vid3"
                          "vid4  vid4  vid4  vid4  vid4  vid4"
                          "vid5  vid5  vid5  vid5  vid5  vid5"
                          "foot  foot  foot  foot  foot  foot";
-    align-content: space-between;
-    background-color: grey;
   }
 
   .codeology {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    min-height: calc(100vh - 25px);
-    grid-template-rows: 100px auto;
-    grid-gap: 1.5em;
     grid-template-areas: "head  head  head  nav   nav   nav"
-                         ".     in    in    in    in    ."
+                         "in    in    in    in    in    in"
                          "vid1  vid1  vid1  vid1  vid1  vid1"
                          ".     sum1  sum1  sum1  sum1  ."
                          "foot  foot  foot  foot  foot  foot";
-    align-content: space-between;
-    background-color: grey;
   }
 
   .contest-of-champions {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    min-height: calc(100vh - 25px);
-    grid-template-rows: 100px auto;
-    grid-gap: 1.5em;
     grid-template-areas: "head  head  head  nav   nav   nav"
-                         ".     in    in    in    in    ."
+                         "in    in    in    in    in    in"
                          "img1  img1  img1  img1  sum1  sum1"
                          "sum2  sum2  img2  img2  img2  img2"
                          "img3  img3  img3  sum3  sum3  sum3"
                          ".     vid1  vid1  vid1  vid1  ."
                          "foot  foot  foot  foot  foot  foot";
-    align-content: space-between;
-    background-color: grey;
   }
 
   .impossible-foods {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    min-height: calc(100vh - 25px);
-    grid-template-rows: 100px auto;
-    grid-gap: 1.5em;
     grid-template-areas: "head  head  head  nav   nav   nav"
-                         ".     in    in    in    in    ."
+                         "in    in    in    in    in    in"
                          "sum1  sum1  sum1  sum1  sum1  sum1"
                          "img1  img1  img2  img2  img3  img3"
                          "sum2  sum2  sum2  sum2  sum2  sum2"
@@ -631,33 +617,19 @@ nav {
                          "sum3  sum3  sum3  sum3  sum3  sum3"
                          ".     img11 img11 img11 img11 ."
                          "foot  foot  foot  foot  foot  foot";
-    align-content: space-between;
-    background-color: grey;
   }
 
   .mario-sonic {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    min-height: calc(100vh - 25px);
-    grid-template-rows: 100px auto;
-    grid-gap: 1.5em;
     grid-template-areas: "head  head  head  nav   nav   nav"
-                         ".     in    in    in    in    ."
+                         "in    in    in    in    in    in"
                          "vid1  vid1  vid1  vid1  vid1  vid1"
                          "vid2  vid2  vid2  vid2  vid2  vid2"
                          "foot  foot  foot  foot  foot  foot";
-    align-content: space-between;
-    background-color: grey;
   }
 
   .ups {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    min-height: calc(100vh - 25px);
-    grid-template-rows: 100px auto;
-    grid-gap: 1.5em;
     grid-template-areas: "head  head  head  nav   nav   nav"
-                         ".     in    in    in    in    ."
+                         "in    in    in    in    in    in"
                          ".     sum1  sum1  sum1  sum1  ."
                          "img1  img1  img1  img1  img1  img2"
                          ".     img3  img3  img3  img3  ."
@@ -670,11 +642,52 @@ nav {
                          "img9  img9  img9  img9  img10 img10"
                          "img9  img9  img9  img9  img11 img11"
                          "foot  foot  foot  foot  foot  foot";
-    align-content: space-between;
-    background-color: white;
   }
 
+  .d1f {
+    grid-template-areas: "head  head  head  nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         ".     vid1  vid1  vid1  vid1  ."
+                         ".     vid2  vid2  vid2  vid2  ."
+                         ".     vid3  vid3  vid3  vid3  ."
+                         ".     vid4  vid4  vid4  vid4  ."
+                         ".     vid5  vid5  vid5  vid5  ."
+                         "foot  foot  foot  foot  foot  foot";
+  }
 
+  .th-gifs {
+    grid-template-areas: "head  head  head  nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         ".     img1  img1  img1  img1  ."
+                         "img4  img4  img4  img3  img3  img3"
+                         "img5  img5  img5  img3  img3  img3"
+                         ".     img2  img2  img2  img2  ."
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .helium {
+    grid-template-areas: "head  head  head  nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         "foot  foot  foot  foot  foot  foot";
+
+  }
+
+  .malkovich {
+    grid-template-areas: "head  head  head  nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         "img6  img6  img6  img3  img3  img3"
+                         "img1  img1  img1  img3  img3  img3"
+                         "img2  img2  img2  img3  img3  img3"
+                         "img2  img2  img2  img5  img5  img4"
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .sfbaes {
+    grid-template-areas: "head  head  head  nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         ".     vid1  vid1  vid1  vid1  ."
+                         "foot  foot  foot  foot  foot  foot";
+  }
 
   nav ul {
     padding: 0;
@@ -689,44 +702,81 @@ nav {
 
   body {
     font-size: 14px;
+    margin: 4% 1%;
   }
 
+  header {
+    margin: auto;
+    font-size: 3.1rem;
+    padding-top: 1%;
+  }
+
+  nav {
+    margin-right: 1.5%;
+}
+
+  p {
+    max-width: 33em;
+  }
+
+  .intro-title {
+    max-width: 11em;
+    margin: auto;
+    font-size: 2.4em;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -.03em;
+    background-color: purple;
+  }
+
+  .intro-head {
+    max-width: 20em;
+    text-align: left;
+    font-size: 1.5em;
+    letter-spacing: -.002em;
+
+  }
+
+  .intro-body {
+    max-width: 25em;
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  .homepage-para {
+    font-size: 1.5em;
+    max-width: 15em;
+    line-height: 1em;
+  }
+
+
 /* css grid classes for all pages, using a 3-column grid here */
+  .gridz {
+    grid-template-columns: repeat(3, 1fr);
+    min-height: calc(100vh - 10px);
+    grid-template-rows: 50px auto;
+    grid-gap: 1em;
+    background-color: aqua;
+  }
+
   .index {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: calc(100vh - 10px);
-  grid-template-rows: 100px auto;
-  grid-gap: 1.5em;
-  grid-template-areas: ".     head  ."
+  grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "main  main  main"
                        "foot  foot  foot";
-  align-content: space-between;
-  background-color: aqua;
   }
 
   .about-page {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: calc(100vh - 10px);
-  grid-template-rows: 100px auto;
-  grid-gap: 1.5em;
-  grid-template-areas: ".     head  ."
+  grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "story story story"
                        "foot  foot  foot";
-  align-content: space-between;
-  background-color: #FF957E;
   }
 
   .dropbox {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: calc(100vh - 10px);
-  grid-template-rows: 100px auto;
-  grid-gap: 1.5em;
-  grid-template-areas: ".     head  ."
+  grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
                        "sum1  sum1  sum1"
@@ -739,17 +789,10 @@ nav {
                        "vid1  vid1  vid1"
                        "vid2  vid2  vid2"
                        "foot  foot  foot";
-  align-content: space-between;
-  background-color: aqua;
   }
 
   .braintree {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: calc(100vh - 10px);
-  grid-template-rows: 100px auto;
-  grid-gap: 1.5em;
-  grid-template-areas: ".     head  ."
+  grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
                        "sum1  sum1  sum1"
@@ -779,17 +822,10 @@ nav {
                        "vid1  vid1  vid1"
                        "vid2  vid2  vid2"
                        "foot  foot  foot";
-  align-content: space-between;
-  background-color: aqua;
   }
 
   .bt-edu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: calc(100vh - 10px);
-  grid-template-rows: 100px auto;
-  grid-gap: 1.5em;
-  grid-template-areas: ".     head  ."
+  grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
                        "vid1  vid1  vid1"
@@ -798,33 +834,19 @@ nav {
                        "vid4  vid4  vid4"
                        "vid5  vid5  vid5"
                        "foot  foot  foot";
-  align-content: space-between;
-  background-color: aqua;
   }
 
   .codeology {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: calc(100vh - 10px);
-  grid-template-rows: 100px auto;
-  grid-gap: 1.5em;
-  grid-template-areas: ".     head  ."
+  grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
                        "vid1  vid1  vid1"
                        "sum1  sum1  sum1"
                        "foot  foot  foot";
-  align-content: space-between;
-  background-color: aqua;
   }
 
   .contest-of-champions {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: calc(100vh - 10px);
-  grid-template-rows: 100px auto;
-  grid-gap: 1.5em;
-  grid-template-areas: ".     head  ."
+  grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
                        "sum1  sum1  sum1"
@@ -835,17 +857,10 @@ nav {
                        "img3  img3  img3"
                        "vid1  vid1  vid1"
                        "foot  foot  foot";
-  align-content: space-between;
-  background-color: aqua;
   }
 
   .impossible-foods {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: calc(100vh - 10px);
-  grid-template-rows: 100px auto;
-  grid-gap: 1.5em;
-  grid-template-areas: ".     head  ."
+  grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
                        ".     sum1  ."
@@ -864,33 +879,19 @@ nav {
                        "sum3  sum3  sum3"
                        "img11 img11 img11"
                        "foot  foot  foot";
-  align-content: space-between;
-  background-color: aqua;
   }
 
   .mario-sonic {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: calc(100vh - 10px);
-  grid-template-rows: 100px auto;
-  grid-gap: 1.5em;
-  grid-template-areas: ".     head  ."
+  grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
                        "vid1  vid1  vid1"
                        "vid2  vid2  vid2"
                        "foot  foot  foot";
-  align-content: space-between;
-  background-color: aqua;
   }
 
   .ups {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: calc(100vh - 10px);
-  grid-template-rows: 100px auto;
-  grid-gap: 1.5em;
-  grid-template-areas: ".     head  ."
+  grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
                        ".     sum1  ."
@@ -905,17 +906,64 @@ nav {
                        "img9  img9  img10"
                        "img9  img9  img11"
                        "foot  foot  foot";
-  align-content: space-between;
-  background-color: aqua;
   }
 
-  header {
-    /* not sure why this text-align isn't working */
-    text-align: right;
+  .d1f {
+    grid-template-areas: "head  head  head"
+                         ".     nav   ."
+                         "in    in    in"
+                         "vid1  vid1  vid1"
+                         "vid2  vid2  vid2"
+                         "vid3  vid3  vid3"
+                         "vid4  vid4  vid4"
+                         "vid5  vid5  vid5"
+                         "foot  foot  foot";
+  }
+
+  .th-gifs {
+    grid-template-areas: "head  head  head"
+                         ".     nav   ."
+                         "in    in    in"
+                         "img1  img1  img1"
+                         "img4  img4  ."
+                         ".     img3  img3"
+                         "img5  img5  ."
+                         ".     img3  img3"
+                         "img2  img2  img2"
+                         "foot  foot  foot";
+  }
+
+  .helium {
+    grid-template-areas: "head  head  head"
+                         ".     nav   ."
+                         "in    in    in"
+                         "foot  foot  foot";
+    align-content: flex-start;
+  }
+
+  .malkovich {
+    grid-template-areas: "head  head  head"
+                         ".     nav   ."
+                         "in    in    in"
+                         "img6  img6  ."
+                         ".     img3  img3"
+                         "img1  img1  ."
+                         ".     img2  img2"
+                         "img5  img5  ."
+                         ".     img4   img4"
+                         "foot  foot  foot";
+  }
+
+  .sfbaes {
+    grid-template-areas: "head  head  head"
+                         ".     nav   ."
+                         "in    in    in"
+                         "vid1  vid1  vid1"
+                         "foot  foot  foot";
   }
 
   nav {
-    display: none;
+    /*display: none;*/
   }
 
 
