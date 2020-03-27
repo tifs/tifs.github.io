@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: Georgia, serif;
+  font-family: Rubik, sans-serif;
   /*font-family: Nunito, sans-serif;*/
   font-size: 20px;
   background: rgba(255,149,126,1);
@@ -65,7 +65,6 @@ nav {
   grid-gap: 1em;
   margin-right: 2%;
   font-size: 1.1em;
-  font-family: Rubik, sans-serif;
   font-weight: 400;
   text-align: right;
   background-color: pink;
@@ -89,13 +88,13 @@ nav {
 
 
 /* connecting written summary classes to grid areas of the same name */
-.sum1 { grid-area: sum1; background: aqua; } .sum2 { grid-area: sum2; } .sum3 { grid-area: sum3; } .sum4 { grid-area: sum4; } .sum2 { grid-area: sum5; } .sum6 { grid-area: sum6; } .sum7 { grid-area: sum7; }
+.sum-a { grid-area: sum-a; background: aqua; } .sum-b { grid-area: sum-b; } .sum-c { grid-area: sum-c; } .sum-d { grid-area: sum-d; } .sum-e { grid-area: sum-e; } .sum-f { grid-area: sum-f; } .sum-g { grid-area: sum-g; }
 
 /* connecting image classes to grid areas of the same name */
-.img1 { grid-area: img1; background: purple; } .img2 { grid-area: img2; background: orange; } .img3 { grid-area: img3; background: silver; } .img4 { grid-area: img4; } .img5 { grid-area: img5; } .img6 { grid-area: img6; } .img7 { grid-area: img7; } .img8 { grid-area: img8; } .img9 { grid-area: img9; } .img10 { grid-area: img10; } .img11 { grid-area: img11; } .img12 { grid-area: img12; } .img13 { grid-area: img13; } .img14 { grid-area: img14; } .img15 { grid-area: img15; } .img16 { grid-area: img16; } .img17 { grid-area: img17; } .img18 { grid-area: img18; } .img19 { grid-area: img19; } .img20 { grid-area: img20; } .img21 { grid-area: img21; } .img22 { grid-area: img22; } .img23 { grid-area: img23; } .img24 { grid-area: img24; } .img25 { grid-area: img25; } .img26 { grid-area: img26; }
+.img-a { grid-area: img-a; background: purple; } .img-b { grid-area: img-b; background: orange; } .img-c { grid-area: img-c; background: silver; } .img-d { grid-area: img-d; } .img-e { grid-area: img-e; } .img-f { grid-area: img-f; } .img-g { grid-area: img-g; } .img-h { grid-area: img-h; } .img-i { grid-area: img-i; } .img-j { grid-area: img-j; } .img-k { grid-area: img-k; } .img-l { grid-area: img-l; } .img-m { grid-area: img-m; } .img-n { grid-area: img-n; } .img-o { grid-area: img-o; } .img-p { grid-area: img-p; } .img-q { grid-area: img-q; } .img-r { grid-area: img-r; } .img-s { grid-area: img-s; } .img-t { grid-area: img-t; } .img-u { grid-area: img-u; } .img-v { grid-area: img-v; } .img-w { grid-area: img-w; } .img-x { grid-area: img-x; } .img-y { grid-area: img-y; } .img-z { grid-area: img-z; }
 
 /* connecting video classes to grid areas of the same name */
-.vid1 { grid-area: vid1; /*min-width: 300px;*/ background: coral; } .vid2 { grid-area: vid2; background: darkorchid; } .vid3 { grid-area: vid3; background: darkorchid; } .vid4 { grid-area: vid4; background: darkorchid; } .vid5 { grid-area: vid5; background: darkorchid; } .vid6 { grid-area: vid6; background: darkorchid; } .vid7 { grid-area: vid7; background: darkorchid; } .vid8 { grid-area: vid8; background: darkorchid; }
+.vid-a { grid-area: vid-a; /*min-width: 300px;*/ background: coral; } .vid-b { grid-area: vid-b; background: darkorchid; } .vid-c { grid-area: vid-c; background: darkorchid; } .vid-d { grid-area: vid-d; background: darkorchid; } .vid-e { grid-area: vid-e; background: darkorchid; } .vid-f { grid-area: vid-f; background: darkorchid; } .vid-g { grid-area: vid-g; background: darkorchid; } .vid-h { grid-area: vid-h; background: darkorchid; }
 
 
 header a, nav a {
@@ -133,7 +132,6 @@ header {
   height: 100%;
   display: flex; */
   /*place-self: center stretch;*/
-  font-family: Rubik, sans-serif;
   font-weight: 900;
   font-size: 3.4em;
   text-align: left;
@@ -150,12 +148,16 @@ img {
   border-radius: 6px;
 }
 
+h4 {
+  font-weight: 500;
+}
 
 p {
   /*text-indent: 2em;*/
   text-align: left;
   margin: auto;
   max-width: 33em;
+  font-family: Georgia, serif;
   /*margin-bottom: 1.5em;*/
   background-color: springgreen;
 }
@@ -248,126 +250,126 @@ blockquote p {
 .dropbox {
   grid-template-areas: "head  head  head  head  head  head   nav   nav  nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  ."
-                       "img1  img1  img1  img1  .     .     .     .     img3  img3  img3  img3"
-                       "img1  img1  img1  img1  img2  img2  img2  img2  img3  img3  img3  img3"
-                       "img4  img4  img4  img4  img2  img2  img2  img2  img5  img5  img5  img5"
-                       "img4  img4  img4  img4  .     .     .     .     img5  img5  img5  img5"
-                       ".     .     .     sum3  sum3  sum3  sum3  sum3  sum3  .     .     ."
-                       ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
-                       ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  ."
+                       ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
+                       "img-a img-a img-a img-a .     .     .     .     img-c img-c img-c img-c"
+                       "img-a img-a img-a img-a img-b img-b img-b img-b img-c img-c img-c img-c"
+                       "img-d img-d img-d img-d img-b img-b img-b img-b img-e img-e img-e img-e"
+                       "img-d img-d img-d img-d .     .     .     .     img-e img-e img-e img-e"
+                       ".     .     .     sum-b sum-b sum-b sum-b sum-b sum-b .     .     ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .braintree {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  ."
-                       "img1  img1  img1  img1  img1  img1  img2  img2  img2  img2  img2  img2"
-                       "img3  img3  img3  img3  img4  img4  img4  img4  img5  img5  img5  img5"
-                       "img6  img6  img6  img6  img6  img6  img6  img6  img7  img7  img7  img7"
-                       "img8  img8  img8  img8  img8  img8  img9  img9  img9  img9  img9  img9"
-                       "img10 img10 img10 img10 img11 img11 img11 img11 img11 img11 img11 img11"
-                       ".     .     .     sum6  sum6  sum6  sum6  sum6  sum6  .     .     ."
-                       "img12 img12 img12 img12 img13 img13 img13 img13 img14 img14 img14 img14"
-                       "img15 img15 img15 img15 img15 blk1  blk1  blk1  blk1  blk1  blk1  blk1"
-                       ".     .     .     sum3  sum3  sum3  sum3  sum3  sum3  .     .     ."
-                       "img16 img16 img16 img16 img17 img17 img17 img17 img18 img18 img18 img18"
-                       ".     .     .     sum4  sum4  sum4  sum4  sum4  sum4  .     .     ."
-                       "img19 img19 img19 img19 img19 img19 img19 img20 img20 img20 img20 img20"
-                       "img21 img21 img21 img21 img21 img21 img21 img22 img22 img22 img22 img22"
-                       ".     .     .     sum7  sum7  sum7  sum7  sum7  sum7  .     .     ."
-                       ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
-                       ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  ."
+                       ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
+                       "img-a img-a img-a img-a img-a img-a img-b img-b img-b img-b img-b img-b"
+                       "img-c img-c img-c img-c img-d img-d img-d img-d img-e img-e img-e img-e"
+                       "img-f img-f img-f img-f img-f img-f img-f img-f img-g img-g img-g img-g"
+                       "img-h img-h img-h img-h img-h img-h img-i img-i img-i img-i img-i img-i"
+                       "img-j img-j img-j img-j img-j img-j img-k img-k img-k img-k img-k img-k"
+                       ".     .     .     sum-b sum-b sum-b sum-b sum-b sum-b .     .     ."
+                       "img-l img-l img-l img-l img-m img-m img-m img-m img-n img-n img-n img-n"
+                       "img-o img-o img-o img-o img-o blk-a blk-a blk-a blk-a blk-a blk-a blk-a"
+                       ".     .     .     sum-c sum-c sum-c sum-c sum-c sum-c .     .     ."
+                       "img-p img-p img-p img-p img-q img-q img-q img-q img-r img-r img-r img-r"
+                       ".     .     .     sum-d sum-d sum-d sum-d sum-d sum-d .     .     ."
+                       "img-s img-s img-s img-s img-s img-s img-s img-t img-t img-t img-t img-t"
+                       "img-u img-u img-u img-u img-u img-u img-u img-v img-v img-v img-v img-v"
+                       ".     .     .     sum-e sum-e sum-e sum-e sum-e sum-e .     .     ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .bt-edu {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
-                       ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  ."
-                       ".     vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  ."
-                       ".     vid4  vid4  vid4  vid4  vid4  vid4  vid4  vid4  vid4  vid4  ."
-                       ".     vid5  vid5  vid5  vid5  vid5  vid5  vid5  vid5  vid5  vid5  ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b ."
+                       ".     vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c ."
+                       ".     vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d ."
+                       ".     vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .codeology {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
-                       ".     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .contest-of-champions {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     img1  img1  img1  img1  img1  img1  img1  sum1  sum1  sum1  sum1"
-                       "sum4  sum4  sum4  sum4  img2  img2  img2  img2  img2  img2  img2  img2"
-                       ".     img3  img3  img3  img3  img3  sum3  sum3  sum3  sum3  sum3  ."
-                       ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
+                       ".     img-a img-a img-a img-a img-a img-a img-a sum-a sum-a sum-a sum-a"
+                       "sum-b sum-b sum-b sum-b img-b img-b img-b img-b img-b img-b img-b img-b"
+                       ".     img-c img-c img-c img-c img-c sum-c sum-c sum-c sum-c sum-c ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .impossible-foods {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  ."
-                       "img1  img1  img1  img1  img2  img2  img2  img2  img3  img3  img3  img3"
-                       ".     sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  ."
-                       ".     img4  img4  img4  img4  img4  img4  img4  img4  img4  img4  ."
-                       ".     img5  img5  img6  img6  img7  img7  img8  img8  img9  img9  ."
-                       "img10 img10 img10 img10 img10 img10 .     .     .     .     .     ."
-                       ".     .     sum3  sum3  sum3  sum3  sum3  sum3  sum3  sum3  .     ."
-                       ".     .     img11 img11 img11 img11 img11 img11 img11 img11 .     ."
+                       ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
+                       "img-a img-a img-a img-a img-b img-b img-b img-b img-c img-c img-c img-c"
+                       ".     sum-b sum-b sum-b sum-b sum-b sum-b sum-b sum-b sum-b sum-b ."
+                       ".     img-d img-d img-d img-d img-d img-d img-d img-d img-d img-d ."
+                       ".     img-e img-e img-f img-f img-g img-g img-h  img-h  img-i img-i ."
+                       "img-j img-j img-j img-j img-j img-j .     .     .     .     .     ."
+                       ".     .     sum-c sum-c sum-c sum-c sum-c sum-c sum-c sum-c .     ."
+                       ".     .     img-k img-k img-k img-k img-k img-k img-k img-k .     ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .mario-sonic {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
-                       ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .ups {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     .     sum1  sum1  sum1  sum1  sum1  sum1  sum1  sum1  .     ."
-                       "img1  img1  img1  img1  img1  img1  img1  img1  img1  img2  img2  img2"
-                       ".     .     img3  img3  img3  img3  img3  img3  img3  img3  .     ."
-                       "img4  img4  img4  img4  img4  img4  .     .     .     .     .     ."
-                       ".     .     .     img5  img5  img5  img5  img5  img5  .     .     ."
-                       ".     .     .     .     .     .     img6  img6  img6  img6  img6  img6"
-                       ".     .     sum4  sum4  sum4  sum4  sum4  sum4  sum4  sum4  .     ."
-                       ".     img7  img7  img7  img7  img7  img7  img7  img8  img8  img8  ."
-                       ".     .     sum3  sum3  sum3  sum3  sum3  sum3  sum3  sum3  .     ."
-                       ".     img9  img9  img9  img9  img9  img9  img10 img10 img10 .     ."
-                       ".     img9  img9  img9  img9  img9  img9  img11 img11 img11 .     ."
+                       ".     .     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a .     ."
+                       "img-a img-a img-a img-a img-a img-a img-a img-a img-a img-b img-b img-b"
+                       ".     .     img-c img-c img-c img-c img-c img-c img-c img-c .     ."
+                       "img-d img-d img-d img-d img-d img-d .     .     .     .     .     ."
+                       ".     .     .     img-e img-e img-e img-e img-e img-e .     .     ."
+                       ".     .     .     .     .     .     img-f img-f img-f img-f img-f img-f"
+                       ".     .     sum-b sum-b sum-b sum-b sum-b sum-b sum-b sum-b .     ."
+                       ".     img-g img-g img-g img-g img-g img-g img-g img-h img-h img-h ."
+                       ".     .     sum-c sum-c sum-c sum-c sum-c sum-c sum-c sum-c .     ."
+                       ".     img-i img-i img-i img-i img-i img-i img-j img-j img-j .     ."
+                       ".     img-i img-i img-i img-i img-i img-i img-k img-k img-k .     ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .d1f {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  .     ."
-                       ".     vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  vid2  .     ."
-                       ".     vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  vid3  .     ."
-                       ".     vid4  vid4  vid4  vid4  vid4  vid4  vid4  vid4  vid4  .     ."
-                       ".     vid5  vid5  vid5  vid5  vid5  vid5  vid5  vid5  vid5  .     ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a .     ."
+                       ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b .     ."
+                       ".     vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c .     ."
+                       ".     vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d .     ."
+                       ".     vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e .     ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .th-gifs {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     img1  img1  img1  img1  img1  img1  img1  img1  img1  img1  ."
-                       ".     img4  img4  img4  img4  img3  img3  img3  img3  img3  img3  ."
-                       ".     img5  img5  img5  img5  img3  img3  img3  img3  img3  img3  ."
-                       ".     .     img2  img2  img2  img2  img2  img2  img2  img2  .     ."
+                       ".     img-a img-a img-a img-a img-a img-a img-a img-a img-a img-a ."
+                       ".     img-d img-d img-d img-d img-c img-c img-c img-c img-c img-c ."
+                       ".     img-e img-e img-e img-e img-c img-c img-c img-c img-c img-c ."
+                       ".     .     img-b img-b img-b img-b img-b img-b img-b img-b .     ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
@@ -380,23 +382,22 @@ blockquote p {
 .malkovich {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     img6  img6  img6  img6  img3  img3  img3  img3  img3  img3  ."
-                       ".     img1  img1  img1  img1  img3  img3  img3  img3  img3  img3  ."
-                       ".     img2  img2  img2  img2     img3  img3  img3  img3  img3  img3  ."
-                       ".     img2  img2  img2  img2  img5  img5  img5  img4  img4  img4  ."
+                       ".     img-f img-f img-f img-f img-c img-c img-c img-c img-c img-c ."
+                       ".     img-a img-a img-a img-a img-c img-c img-c img-c img-c img-c ."
+                       ".     img-b img-b img-b img-b img-c img-c img-c img-c img-c img-c ."
+                       ".     img-b img-b img-b img-b img-e img-e img-e img-d img-d img-d ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .sfbaes {
   grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  vid1  ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 
 .homepage-para {
-  font-family: Rubik, sans-serif;
   font-size: 2.4em;
   max-width: 18em;
   line-height: 1em;
@@ -429,7 +430,6 @@ blockquote p {
   max-width: 11em;
   margin: auto;
   font-size: 3rem;
-  font-family: 'Rubik', sans-serif;
   line-height: 1em;
   text-align: center;
   font-weight: 400;
@@ -442,7 +442,6 @@ blockquote p {
   text-align: left;
   letter-spacing: -.002em;
   font-size: 1.8rem;
-  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   font-style: italic;
   background-color: purple;
@@ -488,7 +487,6 @@ blockquote p {
     max-width: 11em;
     margin: auto;
     font-size: 2.4em;
-    font-family: 'Rubik', sans-serif;
     line-height: 1em;
     text-align: center;
     font-weight: 400;
@@ -542,126 +540,126 @@ blockquote p {
   .dropbox {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         ".     sum1  sum1  sum1  sum1  ."
-                         "img1  img1  .     .     img3  img3"
-                         "img1  img1  img2  img2  img3  img3"
-                         "img4  img4  img2  img2  img5  img5"
-                         "img4  img4  .     .     img5  img5"
-                         ".     sum2  sum2  sum2  sum2  ."
-                         "vid1  vid1  vid1  vid1  vid1  vid1"
-                         "vid2  vid2  vid2  vid2  vid2  vid2"
+                         ".     sum-a sum-a sum-a sum-a ."
+                         "img-a img-a .     .     img-c img-c"
+                         "img-a img-a img-b img-b img-c img-c"
+                         "img-d img-d img-b img-b img-e img-e"
+                         "img-d img-d .     .     img-e img-e"
+                         ".     sum-b sum-b sum-b sum-b ."
+                         "vid-a vid-a vid-a vid-a vid-a vid-a"
+                         "vid-b vid-b vid-b vid-b vid-b vid-b"
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .braintree {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         ".     sum1  sum1  sum1  sum1  ."
-                         "img1  img1  img1  img2  img2  img2"
-                         "img3  img3  img4  img4  img5  img5"
-                         "img6  img6  img6  img6  img7  img7"
-                         "img8  img8  img8  img9  img9  img9"
-                         "img10 img10 img11 img11 img11 img11"
-                         ".     sum2  sum2  sum2  sum2  ."
-                         "img12 img12 img13 img13 img14 img14"
-                         "img15 img15 img15 blk1  blk1  blk1"
-                         ".     sum3  sum3  sum3  sum3  ."
-                         "img16 img16 img17 img17 img18 img18"
-                         ".     sum4  sum4  sum4  sum4  ."
-                         "img19 img19 img19 img19 img20 img20"
-                         "img21 img21 img21 img21 img22 img22"
-                         ".     sum5  sum5  sum5  sum5  ."
-                         "vid1  vid1  vid1  vid1  vid1  vid1"
-                         "vid2  vid2  vid2  vid2  vid2  vid2"
+                         ".     sum-a sum-a sum-a sum-a ."
+                         "img-a img-a img-a img-b img-b img-b"
+                         "img-c img-c img-d img-d img-e img-e"
+                         "img-f img-f img-f img-f img-g img-g"
+                         "img-h img-h img-h img-i img-i img-i"
+                         "img-j img-j img-j img-k img-k img-k"
+                         ".     sum-b sum-b sum-b sum-b ."
+                         "img-l img-l img-m img-m img-n img-n"
+                         "img-o img-o img-o blk-a blk-a blk-a"
+                         ".     sum-c sum-c sum-c sum-c ."
+                         "img-p img-p img-q img-q img-r img-r"
+                         ".     sum-d sum-d sum-d sum-d ."
+                         "img-s img-s img-s img-s img-t img-t"
+                         "img-u img-u img-u img-u img-v img-v"
+                         ".     sum-e sum-e sum-e sum-e ."
+                         "vid-a vid-a vid-a vid-a vid-a vid-a"
+                         "vid-b vid-b vid-b vid-b vid-b vid-b"
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .bt-edu {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         "vid1  vid1  vid1  vid1  vid1  vid1"
-                         "vid2  vid2  vid2  vid2  vid2  vid2"
-                         "vid3  vid3  vid3  vid3  vid3  vid3"
-                         "vid4  vid4  vid4  vid4  vid4  vid4"
-                         "vid5  vid5  vid5  vid5  vid5  vid5"
+                         "vid-a vid-a vid-a vid-a vid-a vid-a"
+                         "vid-b vid-b vid-b vid-b vid-b vid-b"
+                         "vid-c vid-c vid-c vid-c vid-c vid-c"
+                         "vid-d vid-d vid-d vid-d vid-d vid-d"
+                         "vid-e vid-e vid-e vid-e vid-e vid-e"
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .codeology {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         "vid1  vid1  vid1  vid1  vid1  vid1"
-                         ".     sum1  sum1  sum1  sum1  ."
+                         "vid-a vid-a vid-a vid-a vid-a vid-a"
+                         ".     sum-a sum-a sum-a sum-a ."
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .contest-of-champions {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         "img1  img1  img1  img1  sum1  sum1"
-                         "sum2  sum2  img2  img2  img2  img2"
-                         "img3  img3  img3  sum3  sum3  sum3"
-                         ".     vid1  vid1  vid1  vid1  ."
+                         "img-a img-a img-a img-a sum-a sum-a"
+                         "sum-b sum-b img-b img-b img-b img-b"
+                         "img-c img-c img-c sum-c sum-c sum-c"
+                         ".     vid-a vid-a vid-a vid-a ."
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .impossible-foods {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         "sum1  sum1  sum1  sum1  sum1  sum1"
-                         "img1  img1  img2  img2  img3  img3"
-                         "sum2  sum2  sum2  sum2  sum2  sum2"
-                         "img4  img4  img4  img4  img4  img4"
-                         "img5  img6  img7  img8  img9  ."
-                         "img10 img10 img10 .     .     ."
-                         "sum3  sum3  sum3  sum3  sum3  sum3"
-                         ".     img11 img11 img11 img11 ."
+                         "sum-a sum-a sum-a sum-a sum-a sum-a"
+                         "img-a img-a img-b img-b img-c img-c"
+                         "sum-b sum-b sum-b sum-b sum-b sum-b"
+                         "img-d img-d img-d img-d img-d img-d"
+                         "img-e img-f img-g img-h  img-i ."
+                         "img-j img-j img-j .     .     ."
+                         "sum-c sum-c sum-c sum-c sum-c sum-c"
+                         ".     img-k img-k img-k img-k ."
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .mario-sonic {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         "vid1  vid1  vid1  vid1  vid1  vid1"
-                         "vid2  vid2  vid2  vid2  vid2  vid2"
+                         "vid-a vid-a vid-a vid-a vid-a vid-a"
+                         "vid-b vid-b vid-b vid-b vid-b vid-b"
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .ups {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         ".     sum1  sum1  sum1  sum1  ."
-                         "img1  img1  img1  img1  img1  img2"
-                         ".     img3  img3  img3  img3  ."
-                         "img4  img4  img4  .     .     ."
-                         ".     .     img5  img5  img5  ."
-                         ".     .     .     img6  img6  img6"
-                         ".     sum2  sum2  sum2  sum2  ."
-                         "img7  img7  img7  img7  img8  img8"
-                         ".     sum3  sum3  sum3  sum3  ."
-                         "img9  img9  img9  img9  img10 img10"
-                         "img9  img9  img9  img9  img11 img11"
+                         ".     sum-a sum-a sum-a sum-a ."
+                         "img-a img-a img-a img-a img-a img-b"
+                         ".     img-c img-c img-c img-c ."
+                         "img-d img-d img-d .     .     ."
+                         ".     .     img-e img-e img-e ."
+                         ".     .     .     img-f img-f img-f"
+                         ".     sum-b sum-b sum-b sum-b ."
+                         "img-g img-g img-g img-g img-h  img-h"
+                         ".     sum-c sum-c sum-c sum-c ."
+                         "img-i img-i img-i img-i img-j img-j"
+                         "img-i img-i img-i img-i img-k img-k"
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .d1f {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         ".     vid1  vid1  vid1  vid1  ."
-                         ".     vid2  vid2  vid2  vid2  ."
-                         ".     vid3  vid3  vid3  vid3  ."
-                         ".     vid4  vid4  vid4  vid4  ."
-                         ".     vid5  vid5  vid5  vid5  ."
+                         ".     vid-a vid-a vid-a vid-a ."
+                         ".     vid-b vid-b vid-b vid-b ."
+                         ".     vid-c vid-c vid-c vid-c ."
+                         ".     vid-d vid-d vid-d vid-d ."
+                         ".     vid-e vid-e vid-e vid-e ."
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .th-gifs {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         ".     img1  img1  img1  img1  ."
-                         "img4  img4  img4  img3  img3  img3"
-                         "img5  img5  img5  img3  img3  img3"
-                         ".     img2  img2  img2  img2  ."
+                         ".     img-a img-a img-a img-a ."
+                         "img-d img-d img-d img-c img-c img-c"
+                         "img-e img-e img-e img-c img-c img-c"
+                         ".     img-b img-b img-b img-b ."
                          "foot  foot  foot  foot  foot  foot";
   }
 
@@ -675,17 +673,17 @@ blockquote p {
   .malkovich {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         "img6  img6  img6  img3  img3  img3"
-                         "img1  img1  img1  img3  img3  img3"
-                         "img2  img2  img2  img3  img3  img3"
-                         "img2  img2  img2  img5  img5  img4"
+                         "img-f img-f img-f img-c img-c img-c"
+                         "img-a img-a img-a img-c img-c img-c"
+                         "img-b img-b img-b img-c img-c img-c"
+                         "img-b img-b img-b img-e img-e img-d"
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .sfbaes {
     grid-template-areas: "head  head  head  nav   nav   nav"
                          "in    in    in    in    in    in"
-                         ".     vid1  vid1  vid1  vid1  ."
+                         ".     vid-a vid-a vid-a vid-a ."
                          "foot  foot  foot  foot  foot  foot";
   }
 
@@ -723,7 +721,6 @@ blockquote p {
     max-width: 11em;
     margin: auto;
     font-size: 2.4em;
-    font-family: 'Rubik', sans-serif;
     line-height: 1em;
     text-align: center;
     font-weight: 400;
@@ -779,15 +776,15 @@ blockquote p {
   grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
-                       "sum1  sum1  sum1"
-                       "img1  img1  ."
-                       ".     img2  img2"
-                       "img3  img3  ."
-                       ".     img4  img4"
-                       "img5  img5  ."
-                       "sum2  sum2  sum2"
-                       "vid1  vid1  vid1"
-                       "vid2  vid2  vid2"
+                       "sum-a sum-a sum-a"
+                       "img-a img-a ."
+                       ".     img-b img-b"
+                       "img-c img-c ."
+                       ".     img-d img-d"
+                       "img-e img-e ."
+                       "sum-b sum-b sum-b"
+                       "vid-a vid-a vid-a"
+                       "vid-b vid-b vid-b"
                        "foot  foot  foot";
   }
 
@@ -795,32 +792,33 @@ blockquote p {
   grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
-                       "sum1  sum1  sum1"
-                       "img1  img1  img1"
-                       "img2  img2  img2"
-                       "img3  img3  ."
-                       ".     img4  img4"
-                       "img5  img5  ."
-                       "img6  img6  img7"
-                       "img8  img8  ."
-                       ".     img9  img9"
-                       "img10 img11 img11"
-                       "sum2  sum2  sum2"
-                       "img12 img12 ."
-                       ".     img13 img13"
-                       "img14 img14 ."
-                       "img15 img15 img15"
-                       "blk1  blk1  blk1"
-                       "sum3  sum3  sum3"
-                       "img16 img16 ."
-                       ".     img17 img17"
-                       "img18 img18 ."
-                       "sum4  sum4  sum4"
-                       "img19 img19 img20"
-                       "img21 img21 img22"
-                       "sum5  sum5  sum5"
-                       "vid1  vid1  vid1"
-                       "vid2  vid2  vid2"
+                       "sum-a sum-a sum-a"
+                       "img-a img-a img-a"
+                       "img-b img-b img-b"
+                       "img-c img-c ."
+                       ".     img-d img-d"
+                       "img-e img-e ."
+                       "img-f img-f img-g"
+                       "img-h  img-h  ."
+                       ".     img-i img-i"
+                       "img-j img-j ."
+                       ".     img-k img-k"
+                       "sum-b sum-b sum-b"
+                       "img-l img-l ."
+                       ".     img-m img-m"
+                       "img-n img-n ."
+                       "img-o img-o img-o"
+                       "blk-a blk-a blk-a"
+                       "sum-c sum-c sum-c"
+                       "img-p img-p ."
+                       ".     img-q img-q"
+                       "img-r img-r ."
+                       "sum-d sum-d sum-d"
+                       "img-s img-s img-t"
+                       "img-u img-u img-v"
+                       "sum-e sum-e sum-e"
+                       "vid-a vid-a vid-a"
+                       "vid-b vid-b vid-b"
                        "foot  foot  foot";
   }
 
@@ -828,11 +826,11 @@ blockquote p {
   grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
-                       "vid1  vid1  vid1"
-                       "vid2  vid2  vid2"
-                       "vid3  vid3  vid3"
-                       "vid4  vid4  vid4"
-                       "vid5  vid5  vid5"
+                       "vid-a vid-a vid-a"
+                       "vid-b vid-b vid-b"
+                       "vid-c vid-c vid-c"
+                       "vid-d vid-d vid-d"
+                       "vid-e vid-e vid-e"
                        "foot  foot  foot";
   }
 
@@ -840,8 +838,8 @@ blockquote p {
   grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
-                       "vid1  vid1  vid1"
-                       "sum1  sum1  sum1"
+                       "vid-a vid-a vid-a"
+                       "sum-a sum-a sum-a"
                        "foot  foot  foot";
   }
 
@@ -849,13 +847,13 @@ blockquote p {
   grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
-                       "sum1  sum1  sum1"
-                       "img1  img1  img1"
-                       "sum2  sum2  sum2"
-                       "img2  img2  img2"
-                       "sum3  sum3  sum3"
-                       "img3  img3  img3"
-                       "vid1  vid1  vid1"
+                       "sum-a sum-a sum-a"
+                       "img-a img-a img-a"
+                       "sum-b sum-b sum-b"
+                       "img-b img-b img-b"
+                       "sum-c sum-c sum-c"
+                       "img-c img-c img-c"
+                       "vid-a vid-a vid-a"
                        "foot  foot  foot";
   }
 
@@ -863,21 +861,21 @@ blockquote p {
   grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
-                       ".     sum1  ."
-                       "img1  img1  img1"
-                       "img2  img2  img2"
-                       "img3  img3  img3"
-                       ".     sum2  ."
-                       "img4  img4  img4"
-                       "img5  img5  ."
-                       ".     img6  img6"
-                       "img7  img7  ."
-                       ".     img8  img8"
-                       "img9  img9  ."
-                       "img10 img10 img10"
+                       ".     sum-a ."
+                       "img-a img-a ."
+                       ".     img-b img-b"
+                       "img-c img-c ."
+                       ".     sum-b ."
+                       "img-d img-d img-d"
+                       "img-e img-e ."
+                       ".     img-f img-f"
+                       "img-g img-g ."
+                       ".     img-h  img-h"
+                       "img-i img-i ."
+                       "img-j img-j img-j"
                        ".     .     ."
-                       "sum3  sum3  sum3"
-                       "img11 img11 img11"
+                       "sum-c sum-c sum-c"
+                       "img-k img-k img-k"
                        "foot  foot  foot";
   }
 
@@ -885,8 +883,8 @@ blockquote p {
   grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
-                       "vid1  vid1  vid1"
-                       "vid2  vid2  vid2"
+                       "vid-a vid-a vid-a"
+                       "vid-b vid-b vid-b"
                        "foot  foot  foot";
   }
 
@@ -894,17 +892,16 @@ blockquote p {
   grid-template-areas: "head  head  head"
                        ".     nav   ."
                        "in    in    in"
-                       ".     sum1  ."
-                       "img1  img1  img2"
-                       "img3  img3  img3"
-                       "img4  img4  img4"
-                       "img5  img5  img5"
-                       "img6  img6  img6"
-                       ".     sum2  ."
-                       "img7  img7  img8"
-                       ".     sum3  ."
-                       "img9  img9  img10"
-                       "img9  img9  img11"
+                       ".     sum-a ."
+                       "img-a img-a img-b"
+                       "img-c img-c img-c"
+                       "img-d img-d img-d"
+                       "img-e img-e img-e"
+                       "img-f img-f img-f"
+                       ".     sum-b  ."
+                       "img-g img-g img-h"
+                       ".     sum-c  ."
+                       "img-i img-j img-k"
                        "foot  foot  foot";
   }
 
@@ -912,11 +909,11 @@ blockquote p {
     grid-template-areas: "head  head  head"
                          ".     nav   ."
                          "in    in    in"
-                         "vid1  vid1  vid1"
-                         "vid2  vid2  vid2"
-                         "vid3  vid3  vid3"
-                         "vid4  vid4  vid4"
-                         "vid5  vid5  vid5"
+                         "vid-a vid-a vid-a"
+                         "vid-b vid-b vid-b"
+                         "vid-c vid-c vid-c"
+                         "vid-d vid-d vid-d"
+                         "vid-e vid-e vid-e"
                          "foot  foot  foot";
   }
 
@@ -924,12 +921,11 @@ blockquote p {
     grid-template-areas: "head  head  head"
                          ".     nav   ."
                          "in    in    in"
-                         "img1  img1  img1"
-                         "img4  img4  ."
-                         ".     img3  img3"
-                         "img5  img5  ."
-                         ".     img3  img3"
-                         "img2  img2  img2"
+                         "img-a img-a img-a"
+                         "img-d img-d ."
+                         ".     img-c img-c"
+                         "img-e img-e ."
+                         "img-b img-b img-b"
                          "foot  foot  foot";
   }
 
@@ -945,12 +941,12 @@ blockquote p {
     grid-template-areas: "head  head  head"
                          ".     nav   ."
                          "in    in    in"
-                         "img6  img6  ."
-                         ".     img3  img3"
-                         "img1  img1  ."
-                         ".     img2  img2"
-                         "img5  img5  ."
-                         ".     img4   img4"
+                         "img-f img-f ."
+                         ".     img-c img-c"
+                         "img-a img-a ."
+                         ".     img-b img-b"
+                         "img-e img-e ."
+                         ".     img-d  img-d"
                          "foot  foot  foot";
   }
 
@@ -958,7 +954,7 @@ blockquote p {
     grid-template-areas: "head  head  head"
                          ".     nav   ."
                          "in    in    in"
-                         "vid1  vid1  vid1"
+                         "vid-a vid-a vid-a"
                          "foot  foot  foot";
   }
 
