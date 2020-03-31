@@ -94,7 +94,7 @@ nav {
 .img-a { grid-area: img-a; background: purple; } .img-b { grid-area: img-b; background: orange; } .img-c { grid-area: img-c; background: silver; } .img-d { grid-area: img-d; } .img-e { grid-area: img-e; } .img-f { grid-area: img-f; } .img-g { grid-area: img-g; } .img-h { grid-area: img-h; } .img-i { grid-area: img-i; } .img-j { grid-area: img-j; } .img-k { grid-area: img-k; } .img-l { grid-area: img-l; } .img-m { grid-area: img-m; } .img-n { grid-area: img-n; } .img-o { grid-area: img-o; } .img-p { grid-area: img-p; } .img-q { grid-area: img-q; } .img-r { grid-area: img-r; } .img-s { grid-area: img-s; } .img-t { grid-area: img-t; } .img-u { grid-area: img-u; } .img-v { grid-area: img-v; } .img-w { grid-area: img-w; } .img-x { grid-area: img-x; } .img-y { grid-area: img-y; } .img-z { grid-area: img-z; }
 
 /* connecting video classes to grid areas of the same name */
-.vid-a { grid-area: vid-a; /*min-width: 300px;*/ background: coral; } .vid-b { grid-area: vid-b; background: darkorchid; } .vid-c { grid-area: vid-c; background: darkorchid; } .vid-d { grid-area: vid-d; background: darkorchid; } .vid-e { grid-area: vid-e; background: darkorchid; } .vid-f { grid-area: vid-f; background: darkorchid; } .vid-g { grid-area: vid-g; background: darkorchid; } .vid-h { grid-area: vid-h; background: darkorchid; }
+.vid-a { grid-area: vid-a; /*min-width: 300px;*/ background: coral; } .vid-b { grid-area: vid-b; background: darkorchid; } .vid-c { grid-area: vid-c; background: darkorchid; } .vid-d { grid-area: vid-d; background: darkorchid; } .vid-e { grid-area: vid-e; background: darkorchid; } .vid-f { grid-area: vid-f; background: darkorchid; } .vid-g { grid-area: vid-g; background: darkorchid; } .vid-h { grid-area: vid-h; background: darkorchid; } .vid-i { grid-area: vid-i; background: darkorchid; } .vid-j { grid-area: vid-j; background: darkorchid; } .vid-k { grid-area: vid-k; background: darkorchid; } .vid-l { grid-area: vid-l; background: darkorchid; } .vid-m { grid-area: vid-m; background: darkorchid; } .vid-n { grid-area: vid-n; background: darkorchid; } .vid-o { grid-area: vid-o; background: darkorchid; } .vid-p { grid-area: vid-p; background: darkorchid; } .vid-q { grid-area: vid-q; background: darkorchid; } .vid-r { grid-area: vid-r; background: darkorchid; } .vid-s { grid-area: vid-s; background: darkorchid; } .vid-t { grid-area: vid-t; background: darkorchid; } .vid-u { grid-area: vid-u; background: darkorchid; }  .vid-v { grid-area: vid-v; background: darkorchid; } .vid-x { grid-area: vid-x; background: darkorchid; } .vid-y { grid-area: vid-y; background: darkorchid; } .vid-z { grid-area: vid-z; background: darkorchid; } .vid-aa { grid-area: vid-aa; background: darkorchid; } .vid-ab { grid-area: vid-ab; background: darkorchid; } .vid-ac { grid-area: vid-ac; background: darkorchid; } .vid-ad { grid-area: vid-ad; background: darkorchid; } .vid-ae { grid-area: vid-ae; background: darkorchid; } .vid-af { grid-area: vid-af; background: darkorchid; } .vid-ag { grid-area: vid-ag; background: darkorchid; } .vid-ah { grid-area: vid-ah; background: darkorchid; } .vid-ai { grid-area: vid-ai; background: darkorchid; } .vid-aj { grid-area: vid-aj; background: darkorchid; } .vid-ak { grid-area: vid-ak; background: darkorchid; } .vid-al { grid-area: vid-al; background: darkorchid; } .vid-am { grid-area: vid-am; background: darkorchid; } .vid-an { grid-area: vid-an; background: darkorchid; } .vid-ao { grid-area: vid-ao; background: darkorchid; } .vid-ap { grid-area: vid-ap; background: darkorchid; } .vid-aq { grid-area: vid-aq; background: darkorchid; } .vid-ar { grid-area: vid-ar; background: darkorchid; } .vid-at { grid-area: vid-at; background: darkorchid; } .vid-au { grid-area: vid-au; background: darkorchid; } .vid-av { grid-area: vid-av; background: darkorchid; } .vid-aw { grid-area: vid-aw; background: darkorchid; } .vid-ax { grid-area: vid-ax; background: darkorchid; } .vid-ay { grid-area: vid-ay; background: darkorchid; } .vid-az { grid-area: vid-az; background: darkorchid; } .vid-ba { grid-area: vid-ba; background: darkorchid; } .vid-bb { grid-area: vid-bb; background: darkorchid; } .vid-bc { grid-area: vid-bc; background: darkorchid; } .vid-bd { grid-area: vid-bd; background: darkorchid; } .vid-be { grid-area: vid-be; background: darkorchid; } .vid-bf { grid-area: vid-bf; background: darkorchid; } .vid-bg { grid-area: vid-bg; background: darkorchid; } .vid-bh { grid-area: vid-bh; background: darkorchid; } .vid-bi { grid-area: vid-bi; background: darkorchid; } .vid-bj { grid-area: vid-bj; background: darkorchid; } .vid-bk { grid-area: vid-bk; background: darkorchid; } .vid-bl { grid-area: vid-bl; background: darkorchid; } .vid-bm { grid-area: vid-bm; background: darkorchid; } .vid-bn { grid-area: vid-bn; background: darkorchid; } .vid-bo { grid-area: vid-bo; background: darkorchid; }
 
 
 header a, nav a {
@@ -372,14 +372,26 @@ blockquote p {
 }
 
 .d1f {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
-                       ".     in    in    in    in    in    in    in    in    in    in     ."
-                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a  ."
-                       ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b  ."
-                       ".     vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c  ."
-                       ".     vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d  ."
-                       ".     vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e  ."
-                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+  grid-template-areas: "head   head   head   head   head   head   nav    nav    nav    nav    nav    nav"
+                       ".      in     in     in     in     in     in     in     in     in     in      ."
+                       ".      .      sum-a  sum-a  sum-a  sum-a  sum-a  sum-a  sum-a  sum-a  .       ."
+                       ".      vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a   ."
+                       ".      .      sum-b  sum-b  sum-b  sum-b  sum-b  sum-b  sum-b  sum-b  .       ."
+                       ".      vid-b  vid-b  vid-c  vid-c  vid-d  vid-d  vid-e  vid-e  vid-f  vid-f   ."
+                       ".      vid-g  vid-g  vid-h  vid-h  vid-i  vid-i  vid-j  vid-j  vid-k  vid-k   ."
+                       ".      vid-l  vid-l  vid-m  vid-m  vid-n  vid-n  vid-o  vid-o  vid-p  vid-p   ."
+                       ".      vid-q  vid-q  vid-r  vid-r  vid-s  vid-s  vid-t  vid-t  vid-u  vid-u   ."
+                       ".      vid-v  vid-v  vid-bp vid-bp vid-x  vid-x  vid-y  vid-y  vid-z  vid-z   ." /* no idea why, but these grid areas/classes didnt' work: vid-w vid-w */
+                       ".      vid-aa vid-aa vid-ab vid-ab vid-ac vid-ac vid-ad vid-ad vid-ae vid-ae  ."
+                       ".      vid-af vid-af vid-ag vid-ag vid-ah vid-ah vid-ai vid-ai vid-aj vid-aj  ."
+                       ".      vid-ak vid-ak vid-al vid-al vid-am vid-am vid-an vid-an vid-ao vid-ao  ."
+                       ".      vid-ap vid-ap vid-aq vid-aq vid-ar vid-ar vid-at vid-at vid-au vid-au  ." /* no idea why, but these grid areas/classes didnt' work: vid-as vid-as */
+                       ".      vid-av vid-av vid-aw vid-aw vid-ax vid-ax vid-ay vid-ay vid-az vid-az  ."
+                       ".      vid-ba vid-ba vid-bb vid-bb vid-bc vid-bc vid-bd vid-bd vid-be vid-be  ."
+                       ".      vid-bf vid-bf vid-bg vid-bg vid-bh vid-bh vid-bi vid-bi vid-bj vid-bj  ."
+                       ".      vid-bk vid-bk vid-bl vid-bl vid-bm vid-bm vid-bn vid-bn vid-bo vid-bo  ."
+                       "foot   foot   foot   foot   foot   foot   foot   foot   foot   foot   foot   foot";
+
 }
 
 .th-gifs {
