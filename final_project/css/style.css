@@ -16,13 +16,14 @@ body {
   font-family: Rubik, sans-serif;
   /*font-family: Nunito, sans-serif;*/
   font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
   background: rgba(255,149,126,1);
   line-height: 1.5em;
   margin: 4% 1.5%;
 }
 
-/*
-yellow
+ /*saving colors for later */
+/*yellow
 background: rgba(243,235,77,1);
 
 green
@@ -35,26 +36,34 @@ blue
 background: rgba(55,81,162,1);
 
 red
-background: rgba(237,35,41,1);
+background: rgba(237,35,41,1);*/
 
 
-*/
+
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
   margin: 0;
-  border-bottom: solid 2px black;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.8);;
   padding-bottom: 0px;
 }
 
 a:hover {
+  color: rgba(256, 256, 256, 1);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: none;
+}
+
+
+/* saving the linear gradient background for later */
+/*a:hover {
   background: linear-gradient(to right, midnightblue, royalblue);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: none;
-}
+}*/
 
 nav {
   z-index: 1000;
@@ -67,35 +76,31 @@ nav {
   font-size: 1.1em;
   font-weight: 400;
   text-align: right;
-  background-color: pink;
   grid-area: nav;
 }
 
 
 .working {
   grid-area: working;
-  background: lightgreen;
 }
 
 .goofing {
   grid-area: goofing;
-  background: lightseagreen;
 }
 
 .about {
   grid-area: about;
-  background: lightskyblue;
 }
 
 
 /* connecting written summary classes to grid areas of the same name */
-.sum-a { grid-area: sum-a; background: aqua; } .sum-b { grid-area: sum-b; } .sum-c { grid-area: sum-c; } .sum-d { grid-area: sum-d; } .sum-e { grid-area: sum-e; } .sum-f { grid-area: sum-f; } .sum-g { grid-area: sum-g; }
+.sum-a { grid-area: sum-a; } .sum-b { grid-area: sum-b; } .sum-c { grid-area: sum-c; } .sum-d { grid-area: sum-d; } .sum-e { grid-area: sum-e; } .sum-f { grid-area: sum-f; } .sum-g { grid-area: sum-g; }
 
 /* connecting image classes to grid areas of the same name */
-.img-a { grid-area: img-a; background: purple; } .img-b { grid-area: img-b; background: orange; } .img-c { grid-area: img-c; background: silver; } .img-d { grid-area: img-d; } .img-e { grid-area: img-e; } .img-f { grid-area: img-f; } .img-g { grid-area: img-g; } .img-h { grid-area: img-h; } .img-i { grid-area: img-i; } .img-j { grid-area: img-j; } .img-k { grid-area: img-k; } .img-l { grid-area: img-l; } .img-m { grid-area: img-m; } .img-n { grid-area: img-n; } .img-o { grid-area: img-o; } .img-p { grid-area: img-p; } .img-q { grid-area: img-q; } .img-r { grid-area: img-r; } .img-s { grid-area: img-s; } .img-t { grid-area: img-t; } .img-u { grid-area: img-u; } .img-v { grid-area: img-v; } .img-w { grid-area: img-w; } .img-x { grid-area: img-x; } .img-y { grid-area: img-y; } .img-z { grid-area: img-z; }
+.img-a { grid-area: img-a; } .img-b { grid-area: img-b; } .img-c { grid-area: img-c; } .img-d { grid-area: img-d; } .img-e { grid-area: img-e; } .img-f { grid-area: img-f; } .img-g { grid-area: img-g; } .img-h { grid-area: img-h; } .img-i { grid-area: img-i; } .img-j { grid-area: img-j; } .img-k { grid-area: img-k; } .img-l { grid-area: img-l; } .img-m { grid-area: img-m; } .img-n { grid-area: img-n; } .img-o { grid-area: img-o; } .img-p { grid-area: img-p; } .img-q { grid-area: img-q; } .img-r { grid-area: img-r; } .img-s { grid-area: img-s; } .img-t { grid-area: img-t; } .img-u { grid-area: img-u; } .img-v { grid-area: img-v; } .img-w { grid-area: img-w; } .img-x { grid-area: img-x; } .img-y { grid-area: img-y; } .img-z { grid-area: img-z; }
 
 /* connecting video classes to grid areas of the same name */
-.vid-a { grid-area: vid-a; /*min-width: 300px;*/ background: coral; } .vid-b { grid-area: vid-b; background: darkorchid; } .vid-c { grid-area: vid-c; background: darkorchid; } .vid-d { grid-area: vid-d; background: darkorchid; } .vid-e { grid-area: vid-e; background: darkorchid; } .vid-f { grid-area: vid-f; background: darkorchid; } .vid-g { grid-area: vid-g; background: darkorchid; } .vid-h { grid-area: vid-h; background: darkorchid; } .vid-i { grid-area: vid-i; background: darkorchid; } .vid-j { grid-area: vid-j; background: darkorchid; } .vid-k { grid-area: vid-k; background: darkorchid; } .vid-l { grid-area: vid-l; background: darkorchid; } .vid-m { grid-area: vid-m; background: darkorchid; } .vid-n { grid-area: vid-n; background: darkorchid; } .vid-o { grid-area: vid-o; background: darkorchid; } .vid-p { grid-area: vid-p; background: darkorchid; } .vid-q { grid-area: vid-q; background: darkorchid; } .vid-r { grid-area: vid-r; background: darkorchid; } .vid-s { grid-area: vid-s; background: darkorchid; } .vid-t { grid-area: vid-t; background: darkorchid; } .vid-u { grid-area: vid-u; background: darkorchid; }  .vid-v { grid-area: vid-v; background: darkorchid; } .vid-x { grid-area: vid-x; background: darkorchid; } .vid-y { grid-area: vid-y; background: darkorchid; } .vid-z { grid-area: vid-z; background: darkorchid; } .vid-aa { grid-area: vid-aa; background: darkorchid; } .vid-ab { grid-area: vid-ab; background: darkorchid; } .vid-ac { grid-area: vid-ac; background: darkorchid; } .vid-ad { grid-area: vid-ad; background: darkorchid; } .vid-ae { grid-area: vid-ae; background: darkorchid; } .vid-af { grid-area: vid-af; background: darkorchid; } .vid-ag { grid-area: vid-ag; background: darkorchid; } .vid-ah { grid-area: vid-ah; background: darkorchid; } .vid-ai { grid-area: vid-ai; background: darkorchid; } .vid-aj { grid-area: vid-aj; background: darkorchid; } .vid-ak { grid-area: vid-ak; background: darkorchid; } .vid-al { grid-area: vid-al; background: darkorchid; } .vid-am { grid-area: vid-am; background: darkorchid; } .vid-an { grid-area: vid-an; background: darkorchid; } .vid-ao { grid-area: vid-ao; background: darkorchid; } .vid-ap { grid-area: vid-ap; background: darkorchid; } .vid-aq { grid-area: vid-aq; background: darkorchid; } .vid-ar { grid-area: vid-ar; background: darkorchid; } .vid-at { grid-area: vid-at; background: darkorchid; } .vid-au { grid-area: vid-au; background: darkorchid; } .vid-av { grid-area: vid-av; background: darkorchid; } .vid-aw { grid-area: vid-aw; background: darkorchid; } .vid-ax { grid-area: vid-ax; background: darkorchid; } .vid-ay { grid-area: vid-ay; background: darkorchid; } .vid-az { grid-area: vid-az; background: darkorchid; } .vid-ba { grid-area: vid-ba; background: darkorchid; } .vid-bb { grid-area: vid-bb; background: darkorchid; } .vid-bc { grid-area: vid-bc; background: darkorchid; } .vid-bd { grid-area: vid-bd; background: darkorchid; } .vid-be { grid-area: vid-be; background: darkorchid; } .vid-bf { grid-area: vid-bf; background: darkorchid; } .vid-bg { grid-area: vid-bg; background: darkorchid; } .vid-bh { grid-area: vid-bh; background: darkorchid; } .vid-bi { grid-area: vid-bi; background: darkorchid; } .vid-bj { grid-area: vid-bj; background: darkorchid; } .vid-bk { grid-area: vid-bk; background: darkorchid; } .vid-bl { grid-area: vid-bl; background: darkorchid; } .vid-bm { grid-area: vid-bm; background: darkorchid; } .vid-bn { grid-area: vid-bn; background: darkorchid; } .vid-bo { grid-area: vid-bo; background: darkorchid; }
+.vid-a { grid-area: vid-a; } .vid-b { grid-area: vid-b; } .vid-c { grid-area: vid-c; } .vid-d { grid-area: vid-d; } .vid-e { grid-area: vid-e; } .vid-f { grid-area: vid-f; } .vid-g { grid-area: vid-g; } .vid-h { grid-area: vid-h; } .vid-i { grid-area: vid-i; } .vid-j { grid-area: vid-j; } .vid-k { grid-area: vid-k; } .vid-l { grid-area: vid-l; } .vid-m { grid-area: vid-m; } .vid-n { grid-area: vid-n; } .vid-o { grid-area: vid-o; } .vid-p { grid-area: vid-p; } .vid-q { grid-area: vid-q; } .vid-r { grid-area: vid-r; } .vid-s { grid-area: vid-s; } .vid-t { grid-area: vid-t; } .vid-u { grid-area: vid-u; }  .vid-v { grid-area: vid-v; } .vid-x { grid-area: vid-x; } .vid-y { grid-area: vid-y; } .vid-z { grid-area: vid-z; } .vid-aa { grid-area: vid-aa; } .vid-ab { grid-area: vid-ab; } .vid-ac { grid-area: vid-ac; } .vid-ad { grid-area: vid-ad; } .vid-ae { grid-area: vid-ae; } .vid-af { grid-area: vid-af; } .vid-ag { grid-area: vid-ag; } .vid-ah { grid-area: vid-ah; } .vid-ai { grid-area: vid-ai; } .vid-aj { grid-area: vid-aj; } .vid-ak { grid-area: vid-ak; } .vid-al { grid-area: vid-al; } .vid-am { grid-area: vid-am; } .vid-an { grid-area: vid-an; } .vid-ao { grid-area: vid-ao; } .vid-ap { grid-area: vid-ap; } .vid-aq { grid-area: vid-aq; } .vid-ar { grid-area: vid-ar; } .vid-at { grid-area: vid-at; } .vid-au { grid-area: vid-au; } .vid-av { grid-area: vid-av; } .vid-aw { grid-area: vid-aw; } .vid-ax { grid-area: vid-ax; } .vid-ay { grid-area: vid-ay; } .vid-az { grid-area: vid-az; } .vid-ba { grid-area: vid-ba; } .vid-bb { grid-area: vid-bb; } .vid-bc { grid-area: vid-bc; } .vid-bd { grid-area: vid-bd; } .vid-be { grid-area: vid-be; } .vid-bf { grid-area: vid-bf; } .vid-bg { grid-area: vid-bg; } .vid-bh { grid-area: vid-bh; } .vid-bi { grid-area: vid-bi; } .vid-bj { grid-area: vid-bj; } .vid-bk { grid-area: vid-bk; } .vid-bl { grid-area: vid-bl; } .vid-bm { grid-area: vid-bm; } .vid-bn { grid-area: vid-bn; } .vid-bo { grid-area: vid-bo; }
 
 
 header a, nav a {
@@ -120,7 +125,7 @@ nav ul:hover li {
   height: auto;
   display: inline-block;
   visibility: visible;
-  background: orange;
+  background: rgba(256, 256, 256, 0.8);
 }
 
 .story {
@@ -139,7 +144,6 @@ header {
   margin-left: 2%;
   letter-spacing: -0.04em;
   display: inline;
-  background: tomato;
   grid-area: head;
 }
 
@@ -153,21 +157,14 @@ h4 {
 }
 
 p {
-  /*text-indent: 2em;*/
   text-align: left;
   margin: auto;
   max-width: 33em;
   font-family: Georgia, serif;
-  /*margin-bottom: 1.5em;*/
-  background-color: springgreen;
-}
-
-p + p {
-  /*line-height: 0.5em*/
 }
 
 hr {
-  border: 0.5px dashed black;
+  border: 0.5px dashed rgba(0, 0, 0, 0.8);
   width: 50%;
   margin: 1.5em auto;
 }
@@ -209,19 +206,11 @@ section {
 }
 
 footer {
-  /*float: right;*/
-  /*width: 100%;*/
-  /* do i need this text-align? */
-  /*text-align: right;*/
-  /*align-self: center;*/
-  color: white;
+  color: rgba(256, 256, 256, 0.8);;
   background-color: none;
   grid-area: foot;
   place-self: end;
   margin-right: 1%;
-  /*justify-self: right;*/
-  /*text-align: right;
-  align-self: center;*/
 }
 
 blockquote {
@@ -249,7 +238,7 @@ blockquote p {
   grid-gap: 1.5em;
   align-content: space-between;
   background-color: rgba(256,256,256,0.6);
-  border: 0.6em solid white;
+  border: 0.6em solid rgba(256, 256, 256, 0.8);;
 }
 
 .index {
@@ -434,7 +423,6 @@ blockquote p {
   line-height: 1em;
   /*width: 25em;*/
   margin: auto;
-  background-color: #E89C6C;
 }
 
 /* trying to use css grid (.grid) instead */
@@ -451,10 +439,8 @@ blockquote p {
 /*}*/
 
 .intro {
-  /*width: 80%;*/
   margin: auto;
   grid-area: in;
-  /*background: pink;*/
 }
 
 .intro-title {
@@ -465,7 +451,6 @@ blockquote p {
   text-align: center;
   font-weight: 400;
   letter-spacing: -.03em;
-  background-color: purple;
   }
 
 .intro-head {
@@ -475,7 +460,6 @@ blockquote p {
   font-size: 1.8rem;
   font-weight: 300;
   font-style: italic;
-  background-color: purple;
 }
 
 .intro-body {
@@ -484,7 +468,6 @@ blockquote p {
   font-size: 1.2em;
   /*font-family: 'Nunito', sans-serif;*/
   text-align: left;
-  background-color: purple;
 }
 
 /*.hrz {
@@ -525,7 +508,6 @@ blockquote p {
     text-align: center;
     font-weight: 400;
     letter-spacing: -.03em;
-    background-color: purple;
   }
 
   .intro-head {
@@ -554,7 +536,6 @@ blockquote p {
     min-height: calc(100vh - 25px);
     grid-template-rows: 100px auto;
     grid-gap: 1.2em;
-    background-color: grey;
   }
 
   .index {
@@ -784,7 +765,6 @@ blockquote p {
     text-align: center;
     font-weight: 400;
     letter-spacing: -.03em;
-    background-color: purple;
   }
 
   .intro-head {
@@ -814,7 +794,6 @@ blockquote p {
     min-height: calc(100vh - 10px);
     grid-template-rows: 50px 50px auto;
     grid-gap: 1em;
-    background-color: aqua;
   }
 
   .index {
