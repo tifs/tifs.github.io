@@ -107,6 +107,10 @@ header a, nav a {
   border-bottom: none;
 }
 
+nav ul>a {
+  width: 100%;
+  display: inline-block;
+}
 
 nav li {
   height: 0;
@@ -138,7 +142,7 @@ header {
   display: flex; */
   /*place-self: center stretch;*/
   font-weight: 900;
-  font-size: 3.4em;
+  font-size: 3.2em;
   text-align: left;
   padding-top: 4%;
   margin-left: 2%;
@@ -190,7 +194,6 @@ section {
   position: relative;
   justify-content: center;
   padding-bottom: 56.25%; /*16:9*/
-  padding-top: 30px;
   height: 0;
   overflow: hidden;
 }
@@ -243,20 +246,20 @@ blockquote p {
 
 .index {
   grid-template-rows: 100px auto 20%;
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     .     main  main  main  main  main  main  main  main  .     ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .about-page {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     story story story story story story story story story story ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 
 .dropbox {
-  grid-template-areas: "head  head  head  head  head  head   nav   nav  nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
                        "img-a img-a img-a img-a .     .     .     .     img-c img-c img-c img-c"
@@ -270,7 +273,7 @@ blockquote p {
 }
 
 .braintree {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
                        "img-a img-a img-a img-a img-a img-a img-b img-b img-b img-b img-b img-b"
@@ -293,7 +296,7 @@ blockquote p {
 }
 
 .bt-edu {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
                        ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b ."
@@ -304,7 +307,7 @@ blockquote p {
 }
 
 .codeology {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
                        ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
@@ -312,7 +315,7 @@ blockquote p {
 }
 
 .contest-of-champions {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     img-a img-a img-a img-a img-a img-a img-a sum-a sum-a sum-a sum-a"
                        "sum-b sum-b sum-b sum-b img-b img-b img-b img-b img-b img-b img-b img-b"
@@ -322,7 +325,7 @@ blockquote p {
 }
 
 .impossible-foods {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
                        "img-a img-a img-a img-a img-b img-b img-b img-b img-c img-c img-c img-c"
@@ -336,7 +339,7 @@ blockquote p {
 }
 
 .mario-sonic {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
                        ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b ."
@@ -344,7 +347,7 @@ blockquote p {
 }
 
 .ups {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     .     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a .     ."
                        "img-a img-a img-a img-a img-a img-a img-a img-a img-a img-b img-b img-b"
@@ -361,7 +364,7 @@ blockquote p {
 }
 
 .d1f {
-  grid-template-areas: "head   head   head   head   head   head   nav    nav    nav    nav    nav    nav"
+  grid-template-areas: "head   head   head   head   head   nav    nav    nav    nav    nav    nav     nav"
                        ".      in     in     in     in     in     in     in     in     in     in      ."
                        ".      .      sum-a  sum-a  sum-a  sum-a  sum-a  sum-a  sum-a  sum-a  .       ."
                        ".      vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a   ."
@@ -384,7 +387,7 @@ blockquote p {
 }
 
 .th-gifs {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     img-a img-a img-a img-a img-a img-a img-a img-a img-a img-a ."
                        ".     img-d img-d img-d img-d img-c img-c img-c img-c img-c img-c ."
@@ -394,13 +397,13 @@ blockquote p {
 }
 
 .helium {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
 }
 
 .malkovich {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     img-f img-f img-f img-f img-c img-c img-c img-c img-c img-c ."
                        ".     img-a img-a img-a img-a img-c img-c img-c img-c img-c img-c ."
@@ -410,7 +413,7 @@ blockquote p {
 }
 
 .sfbaes {
-  grid-template-areas: "head  head  head  head  head  head  nav   nav   nav   nav   nav   nav"
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
                        ".     in    in    in    in    in    in    in    in    in    in     ."
                        ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
                        "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
@@ -487,8 +490,8 @@ blockquote p {
   }
 
   header {
-    font-size: 3.1rem;
-    padding-top: 4%;
+    font-size: 2.19rem;
+    padding-top: 9%;
     margin-left: 1.5%;
 }
 
@@ -540,20 +543,20 @@ blockquote p {
 
   .index {
     grid-template-rows: 15% auto 15%;
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "main  main  main  main  main  main"
                          "foot  foot  foot  foot  foot  foot";
   }
 
   .about-page {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          ".     story story story story ."
                          "foot  foot  foot  foot  foot  foot";
     align-content: space-between;
   }
 
   .dropbox {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          ".     sum-a sum-a sum-a sum-a ."
                          "img-a img-a .     .     img-c img-c"
@@ -567,7 +570,7 @@ blockquote p {
   }
 
   .braintree {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          ".     sum-a sum-a sum-a sum-a ."
                          "img-a img-a img-a img-b img-b img-b"
@@ -590,7 +593,7 @@ blockquote p {
   }
 
   .bt-edu {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          "vid-a vid-a vid-a vid-a vid-a vid-a"
                          "vid-b vid-b vid-b vid-b vid-b vid-b"
@@ -601,7 +604,7 @@ blockquote p {
   }
 
   .codeology {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          "vid-a vid-a vid-a vid-a vid-a vid-a"
                          ".     sum-a sum-a sum-a sum-a ."
@@ -609,7 +612,7 @@ blockquote p {
   }
 
   .contest-of-champions {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          "img-a img-a img-a img-a sum-a sum-a"
                          "sum-b sum-b img-b img-b img-b img-b"
@@ -619,7 +622,7 @@ blockquote p {
   }
 
   .impossible-foods {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          "sum-a sum-a sum-a sum-a sum-a sum-a"
                          "img-a img-a img-b img-b img-c img-c"
@@ -633,7 +636,7 @@ blockquote p {
   }
 
   .mario-sonic {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          "vid-a vid-a vid-a vid-a vid-a vid-a"
                          "vid-b vid-b vid-b vid-b vid-b vid-b"
@@ -641,7 +644,7 @@ blockquote p {
   }
 
   .ups {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          ".     sum-a sum-a sum-a sum-a ."
                          "img-a img-a img-a img-a img-a img-b"
@@ -658,7 +661,7 @@ blockquote p {
   }
 
   .d1f {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          ".     vid-a vid-a vid-a vid-a ."
                          ".     vid-b vid-b vid-b vid-b ."
@@ -669,7 +672,7 @@ blockquote p {
   }
 
   .th-gifs {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          ".     img-a img-a img-a img-a ."
                          "img-d img-d img-d img-c img-c img-c"
@@ -679,14 +682,14 @@ blockquote p {
   }
 
   .helium {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          "foot  foot  foot  foot  foot  foot";
 
   }
 
   .malkovich {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          "img-f img-f img-f img-c img-c img-c"
                          "img-a img-a img-a img-c img-c img-c"
@@ -696,7 +699,7 @@ blockquote p {
   }
 
   .sfbaes {
-    grid-template-areas: "head  head  head  nav   nav   nav"
+    grid-template-areas: "head  head  nav   nav   nav   nav"
                          "in    in    in    in    in    in"
                          ".     vid-a vid-a vid-a vid-a ."
                          "foot  foot  foot  foot  foot  foot";
@@ -711,7 +714,7 @@ blockquote p {
  }
 
 /* code for small, phone-sized screens */
- @media screen and (max-width: 525px) {
+ @media screen and (max-width: 560px) {
 
   body {
     font-size: 14px;
